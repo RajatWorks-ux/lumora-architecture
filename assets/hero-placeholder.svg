@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" fill="none">
+    <defs>
+        <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FAFAF9"/>
+            <stop offset="50%" stop-color="#F5F0EB"/>
+            <stop offset="100%" stop-color="#EDE8E3"/>
+        </linearGradient>
+        <radialGradient id="glow1" cx="30%" cy="20%" r="50%">
+            <stop offset="0%" stop-color="#A16207" stop-opacity="0.15"/>
+            <stop offset="100%" stop-color="#A16207" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="glow2" cx="70%" cy="80%" r="50%">
+            <stop offset="0%" stop-color="#44403C" stop-opacity="0.1"/>
+            <stop offset="100%" stop-color="#44403C" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#A16207" stop-opacity="0"/>
+            <stop offset="50%" stop-color="#A16207" stop-opacity="1"/>
+            <stop offset="100%" stop-color="#A16207" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+    
+    <!-- Background -->
+    <rect width="1920" height="1080" fill="url(#heroBg)"/>
+    
+    <!-- Glow effects -->
+    <ellipse cx="576" cy="216" rx="600" ry="400" fill="url(#glow1)"/>
+    <ellipse cx="1344" cy="864" rx="500" ry="350" fill="url(#glow2)"/>
+    
+    <!-- Subtle geometric pattern -->
+    <g opacity="0.03" stroke="#1C1917" stroke-width="0.5">
+        <line x1="0" y1="200" x2="1920" y2="200"/>
+        <line x1="0" y1="400" x2="1920" y2="400"/>
+        <line x1="0" y1="600" x2="1920" y2="600"/>
+        <line x1="0" y1="800" x2="1920" y2="800"/>
+        <line x1="400" y1="0" x2="400" y2="1080"/>
+        <line x1="800" y1="0" x2="800" y2="1080"/>
+        <line x1="1200" y1="0" x2="1200" y2="1080"/>
+        <line x1="1600" y1="0" x2="1600" y2="1080"/>
+    </g>
+    
+    <!-- Central accent element -->
+    <g transform="translate(960, 540)">
+        <!-- Outer ring -->
+        <circle r="180" fill="none" stroke="url(#accentLine)" stroke-width="1" opacity="0.3"/>
+        <circle r="140" fill="none" stroke="url(#accentLine)" stroke-width="1" opacity="0.2"/>
+        <circle r="100" fill="none" stroke="url(#accentLine)" stroke-width="1" opacity="0.15"/>
+        
+        <!-- Diamond shape -->
+        <g fill="none" stroke="#A16207" stroke-width="1.5" opacity="0.4">
+            <polygon points="0,-80 80,0 0,80 -80,0"/>
+            <polygon points="0,-60 60,0 0,60 -60,0" transform="rotate(45)"/>
+        </g>
+        
+        <!-- Center dot -->
+        <circle r="4" fill="#A16207"/>
+    </g>
+    
+    <!-- Floating particles -->
+    <g fill="#A16207" opacity="0.3">
+        <circle cx="300" cy="150" r="2"/>
+        <circle cx="1600" cy="900" r="1.5"/>
+        <circle cx="400" cy="700" r="2"/>
+        <circle cx="1500" cy="300" r="1.5"/>
+        <circle cx="800" cy="200" r="1"/>
+        <circle cx="1100" cy="850" r="2"/>
+        <circle cx="600" cy="950" r="1"/>
+        <circle cx="1300" cy="150" r="1.5"/>
+    </g>
+    
+    <!-- Bottom gradient fade -->
+    <rect x="0" y="800" width="1920" height="280">
+        <rect.fill>
+            <linearGradient x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#FAFAF9" stop-opacity="0"/>
+                <stop offset="100%" stop-color="#FAFAF9" stop-opacity="1"/>
+            </linearGradient>
+        </rect.fill>
+    </rect>
+</svg>

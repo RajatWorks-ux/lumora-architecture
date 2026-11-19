@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NOVA — Premium luxury brand experience. Discover exceptional craftsmanship and timeless elegance.">
+    <meta name="theme-color" content="#1C1917">
+    <title>NOVA | Premium Luxury Experience</title>
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="NOVA | Premium Luxury Experience">
+    <meta property="og:description" content="Discover exceptional craftsmanship and timeless elegance.">
+    <meta property="og:image" content="assets/og-image.svg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NOVA | Premium Luxury Experience">
+    <meta name="twitter:description" content="Discover exceptional craftsmanship and timeless elegance.">
+    <meta name="twitter:image" content="assets/og-image.svg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Brand",
+        "name": "NOVA",
+        "description": "Premium luxury brand experience",
+        "url": "https://nova.example.com",
+        "logo": "https://nova.example.com/assets/logo.svg"
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <header class="header" id="header" role="banner">
+        <nav class="nav container" aria-label="Main navigation">
+            <a href="/" class="nav__logo" aria-label="NOVA Home">
+                <svg class="nav__logo-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                    <path d="M24 4L8 20v16l16 12 16-12V20L24 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M24 12v20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <span class="nav__logo-text">NOVA</span>
+            </a>
+            
+            <div class="nav__links" id="navLinks" role="navigation">
+                <a href="#about" class="nav__link">About</a>
+                <a href="#gallery" class="nav__link">Gallery</a>
+                <a href="#pricing" class="nav__link">Collections</a>
+                <a href="#contact" class="nav__link">Contact</a>
+            </div>
+            
+            <div class="nav__actions">
+                <button class="nav__search" aria-label="Search" aria-expanded="false">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="M21 21l-4.35-4.35"/>
+                    </svg>
+                </button>
+                <button class="nav__cart" aria-label="Shopping cart (0 items)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <path d="M16 10a4 4 0 0 1 0 8"/>
+                    </svg>
+                    <span class="nav__cart-count" aria-hidden="true">0</span>
+                </button>
+                <button class="nav__menu-toggle" id="navMenuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+                    <span class="nav__menu-bar" aria-hidden="true"></span>
+                    <span class="nav__menu-bar" aria-hidden="true"></span>
+                    <span class="nav__menu-bar" aria-hidden="true"></span>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Search Overlay -->
+        <div class="nav__search-overlay" id="searchOverlay" role="search" aria-hidden="true">
+            <form class="nav__search-form" action="#search" method="GET">
+                <label for="searchInput" class="visually-hidden">Search NOVA</label>
+                <input type="search" id="searchInput" name="q" placeholder="Search collections..." autocomplete="off" aria-label="Search">
+                <button type="submit" class="nav__search-submit" aria-label="Submit search">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="M21 21l-4.35-4.35"/>
+                    </svg>
+                </button>
+            </form>
+            <button class="nav__search-close" aria-label="Close search">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="hero" id="hero" aria-labelledby="hero-title">
+            <div class="hero__background" aria-hidden="true">
+                <div class="hero__image-wrapper">
+                    <!-- Placeholder for hero-reference.jpg -->
+                    <div class="hero__placeholder" style="background-image: url('assets/hero-placeholder.svg')">
+                        <div class="hero__placeholder-overlay"></div>
+                        <div class="hero__placeholder-content">
+                            <span class="hero__placeholder-badge">Premium Visual</span>
+                            <p class="hero__placeholder-text">hero-reference.jpg</p>
+                            <p class="hero__placeholder-hint">Add your hero image here</p>
+                        </div>
+                    </div>
+                    <div class="hero__light-ray" aria-hidden="true"></div>
+                    <div class="hero__light-ray hero__light-ray--secondary" aria-hidden="true"></div>
+                </div>
+                <div class="hero__particles" aria-hidden="true"></div>
+            </div>
+            
+            <div class="hero__foreground container">
+                <div class="hero__content" data-scroll-reveal>
+                    <p class="hero__eyebrow" data-scroll-reveal-delay="100">Exceptional Craftsmanship</p>
+                    <h1 class="hero__title" id="hero-title" data-scroll-reveal-delay="200">Timeless Elegance, Redefined</h1>
+                    <p class="hero__description" data-scroll-reveal-delay="300">Discover a curated collection of exquisite pieces where heritage meets innovation. Each creation tells a story of dedication, precision, and enduring beauty.</p>
+                    <div class="hero__actions" data-scroll-reveal-delay="400">
+                        <a href="#gallery" class="btn btn--primary btn--large">Explore Collections</a>
+                        <a href="#about" class="btn btn--secondary btn--large">Our Story</a>
+                    </div>
+                </div>
+                
+                <div class="hero__scroll-indicator" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M12 5v14M19 12l-7 7-7-7"/>
+                    </svg>
+                    <span>Scroll to discover</span>
+                </div>
+            </div>
+            
+            <div class="hero__stats" data-scroll-reveal data-scroll-reveal-delay="500">
+                <div class="container hero__stats-grid">
+                    <div class="stat">
+                        <span class="stat__value" data-count="15">0</span>
+                        <span class="stat__suffix">+</span>
+                        <p class="stat__label">Years of Excellence</p>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__value" data-count="500">0</span>
+                        <span class="stat__suffix">+</span>
+                        <p class="stat__label">Master Artisans</p>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__value" data-count="50">0</span>
+                        <span class="stat__suffix">+</span>
+                        <p class="stat__label">Countries Served</p>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__value" data-count="100">0</span>
+                        <span class="stat__suffix">%</span>
+                        <p class="stat__label">Sustainable Materials</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section class="section about" id="about" aria-labelledby="about-title" data-scroll-reveal>
+            <div class="container">
+                <div class="section__header">
+                    <p class="section__eyebrow">Our Philosophy</p>
+                    <h2 class="section__title" id="about-title">Where Heritage Meets Innovation</h2>
+                </div>
+                
+                <div class="about__grid">
+                    <div class="about__content">
+                        <p class="about__lead">For over fifteen years, NOVA has stood at the intersection of tradition and modernity. Our master artisans combine time-honored techniques with contemporary vision to create pieces that transcend trends.</p>
+                        <p class="about__body">Every creation begins with a conversation—between material and maker, between heritage and future. We source only the finest sustainable materials from ethical suppliers worldwide, ensuring each piece carries not just beauty, but integrity.</p>
+                        <div class="about__highlights">
+                            <div class="highlight">
+                                <div class="highlight__icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    </svg>
+                                </div>
+                                <div class="highlight__text">
+                                    <h3 class="highlight__title">Ethical Sourcing</h3>
+                                    <p class="highlight__desc">100% traceable materials from certified partners</p>
+                                </div>
+                            </div>
+                            <div class="highlight">
+                                <div class="highlight__icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M12 6v6l4 2"/>
+                                    </svg>
+                                </div>
+                                <div class="highlight__text">
+                                    <h3 class="highlight__title">Lifetime Guarantee</h3>
+                                    <p class="highlight__desc">Every piece backed by our lifetime warranty</p>
+                                </div>
+                            </div>
+                            <div class="highlight">
+                                <div class="highlight__icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                                    </svg>
+                                </div>
+                                <div class="highlight__text">
+                                    <h3 class="highlight__title">Carbon Neutral</h3>
+                                    <p class="highlight__desc">Net-zero operations since 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about__visual" aria-hidden="true">
+                        <div class="about__image-wrapper">
+                            <div class="about__placeholder">
+                                <div class="about__placeholder-overlay"></div>
+                                <div class="about__placeholder-content">
+                                    <span class="about__placeholder-badge">Artisan Process</span>
+                                    <p>Workshop photography</p>
+                                </div>
+                            </div>
+                            <div class="about__accent-shape" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Gallery Section -->
+        <section class="section gallery" id="gallery" aria-labelledby="gallery-title" data-scroll-reveal>
+            <div class="container">
+                <div class="section__header">
+                    <p class="section__eyebrow">Curated Collections</p>
+                    <h2 class="section__title" id="gallery-title">Signature Pieces</h2>
+                    <p class="section__description">Each piece in our gallery represents the pinnacle of design and craftsmanship. Explore three signature collections.</p>
+                </div>
+                
+                <div class="gallery__grid" role="list">
+                    <!-- Gallery Item 1 - gallery-01.jpg -->
+                    <article class="gallery__item" role="listitem" data-scroll-reveal data-scroll-reveal-delay="100">
+                        <div class="gallery__image-wrapper">
+                            <div class="gallery__placeholder" style="background-image: url('assets/gallery-01-placeholder.svg')">
+                                <div class="gallery__placeholder-overlay"></div>
+                                <div class="gallery__placeholder-content">
+                                    <span class="gallery__placeholder-badge">Collection One</span>
+                                    <p class="gallery__placeholder-filename">gallery-01.jpg</p>
+                                    <p class="gallery__placeholder-hint">First gallery reference image</p>
+                                </div>
+                            </div>
+                            <div class="gallery__hover-content">
+                                <h3 class="gallery__item-title">Aurora Collection</h3>
+                                <p class="gallery__item-desc">Luminous pieces inspired by dawn</p>
+                                <a href="#pricing" class="gallery__item-link">View Collection <span aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                        <div class="gallery__meta">
+                            <span class="gallery__category">Fine Jewelry</span>
+                            <span class="gallery__count">12 Pieces</span>
+                        </div>
+                    </article>
+                    
+                    <!-- Gallery Item 2 - gallery-02.jpg -->
+                    <article class="gallery__item" role="listitem" data-scroll-reveal data-scroll-reveal-delay="200">
+                        <div class="gallery__image-wrapper">
+                            <div class="gallery__placeholder" style="background-image: url('assets/gallery-02-placeholder.svg')">
+                                <div class="gallery__placeholder-overlay"></div>
+                                <div class="gallery__placeholder-content">
+                                    <span class="gallery__placeholder-badge">Collection Two</span>
+                                    <p class="gallery__placeholder-filename">gallery-02.jpg</p>
+                                    <p class="gallery__placeholder-hint">Second gallery reference image</p>
+                                </div>
+                            </div>
+                            <div class="gallery__hover-content">
+                                <h3 class="gallery__item-title">Noir Collection</h3>
+                                <p class="gallery__item-desc">Bold statements in midnight tones</p>
+                                <a href="#pricing" class="gallery__item-link">View Collection <span aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                        <div class="gallery__meta">
+                            <span class="gallery__category">Timepieces</span>
+                            <span class="gallery__count">8 Pieces</span>
+                        </div>
+                    </article>
+                    
+                    <!-- Gallery Item 3 - gallery-03.jpg -->
+                    <article class="gallery__item" role="listitem" data-scroll-reveal data-scroll-reveal-delay="300">
+                        <div class="gallery__image-wrapper">
+                            <div class="gallery__placeholder" style="background-image: url('assets/gallery-03-placeholder.svg')">
+                                <div class="gallery__placeholder-overlay"></div>
+                                <div class="gallery__placeholder-content">
+                                    <span class="gallery__placeholder-badge">Collection Three</span>
+                                    <p class="gallery__placeholder-filename">gallery-03.jpg</p>
+                                    <p class="gallery__placeholder-hint">Third gallery reference image</p>
+                                </div>
+                            </div>
+                            <div class="gallery__hover-content">
+                                <h3 class="gallery__item-title">Lumina Collection</h3>
+                                <p class="gallery__item-desc">Radiant designs for modern elegance</p>
+                                <a href="#pricing" class="gallery__item-link">View Collection <span aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                        <div class="gallery__meta">
+                            <span class="gallery__category">Accessories</span>
+                            <span class="gallery__count">15 Pieces</span>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="gallery__cta" data-scroll-reveal data-scroll-reveal-delay="400">
+                    <a href="#pricing" class="btn btn--primary btn--large">View All Collections</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Pricing Section -->
+        <section class="section pricing" id="pricing" aria-labelledby="pricing-title" data-scroll-reveal>
+            <div class="container">
+                <div class="section__header">
+                    <p class="section__eyebrow">Investment Tiers</p>
+                    <h2 class="section__title" id="pricing-title">Choose Your Journey</h2>
+                    <p class="section__description">Three curated tiers designed for different chapters of your story. Each includes lifetime care and personalized service.</p>
+                </div>
+                
+                <div class="pricing__toggle" role="group" aria-label="Billing period">
+                    <input type="radio" id="billingAnnual" name="billing" value="annual" checked>
+                    <label for="billingAnnual" class="pricing__toggle-btn">Annual</label>
+                    <input type="radio" id="billingMonthly" name="billing" value="monthly">
+                    <label for="billingMonthly" class="pricing__toggle-btn">Monthly</label>
+                </div>
+                
+                <div class="pricing__grid" role="list">
+                    <!-- Tier 1: Essence -->
+                    <article class="pricing__card" role="listitem" data-scroll-reveal data-scroll-reveal-delay="100">
+                        <div class="pricing__card-header">
+                            <span class="pricing__tier-badge">Essence</span>
+                            <h3 class="pricing__tier-name">Essence</h3>
+                            <p class="pricing__tier-desc">The perfect introduction to NOVA</p>
+                        </div>
+                        
+                        <div class="pricing__price">
+                            <span class="pricing__currency">$</span>
+                            <span class="pricing__amount" data-annual="2,400" data-monthly="220">2,400</span>
+                            <span class="pricing__period">/year</span>
+                        </div>
+                        
+                        <ul class="pricing__features" role="list">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Access to Essence Collection</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Annual design consultation</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Complimentary cleaning service</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Lifetime warranty</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Priority customer support</li>
+                            <li class="pricing__feature--disabled"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Exclusive previews</li>
+                            <li class="pricing__feature--disabled"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Custom design service</li>
+                        </ul>
+                        
+                        <button class="btn btn--secondary btn--full pricing__cta" data-tier="essence">Begin Journey</button>
+                    </article>
+                    
+                    <!-- Tier 2: Signature (Featured) -->
+                    <article class="pricing__card pricing__card--featured" role="listitem" data-scroll-reveal data-scroll-reveal-delay="200">
+                        <div class="pricing__card-ribbon" aria-hidden="true">Most Chosen</div>
+                        <div class="pricing__card-header">
+                            <span class="pricing__tier-badge">Signature</span>
+                            <h3 class="pricing__tier-name">Signature</h3>
+                            <p class="pricing__tier-desc">Elevated experience for connoisseurs</p>
+                        </div>
+                        
+                        <div class="pricing__price">
+                            <span class="pricing__currency">$</span>
+                            <span class="pricing__amount" data-annual="6,800" data-monthly="620">6,800</span>
+                            <span class="pricing__period">/year</span>
+                        </div>
+                        
+                        <ul class="pricing__features" role="list">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Full Signature Collection access</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Quarterly design consultations</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Complimentary cleaning & polish</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Lifetime warranty + insurance</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> 24/7 concierge service</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Exclusive collection previews</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Annual custom design credit</li>
+                        </ul>
+                        
+                        <button class="btn btn--primary btn--full pricing__cta" data-tier="signature">Select Signature</button>
+                    </article>
+                    
+                    <!-- Tier 3: Legacy -->
+                    <article class="pricing__card" role="listitem" data-scroll-reveal data-scroll-reveal-delay="300">
+                        <div class="pricing__card-header">
+                            <span class="pricing__tier-badge">Legacy</span>
+                            <h3 class="pricing__tier-name">Legacy</h3>
+                            <p class="pricing__tier-desc">The ultimate NOVA experience</p>
+                        </div>
+                        
+                        <div class="pricing__price">
+                            <span class="pricing__currency">$</span>
+                            <span class="pricing__amount" data-annual="18,000" data-monthly="1,600">18,000</span>
+                            <span class="pricing__period">/year</span>
+                        </div>
+                        
+                        <ul class="pricing__features" role="list">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Complete archive access</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Monthly private consultations</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> White-glove care service</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Lifetime warranty + full coverage</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Dedicated relationship manager</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> First access to all releases</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Unlimited custom creations</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Private atelier visits</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Heirloom documentation</li>
+                        </ul>
+                        
+                        <button class="btn btn--secondary btn--full pricing__cta" data-tier="legacy">Begin Legacy</button>
+                    </article>
+                </div>
+                
+                <p class="pricing__note" data-scroll-reveal data-scroll-reveal-delay="400">All tiers include complimentary worldwide shipping, secure storage options, and access to our digital vault for provenance tracking.</p>
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section class="section testimonials" id="testimonials" aria-labelledby="testimonials-title" data-scroll-reveal>
+            <div class="container">
+                <div class="section__header">
+                    <p class="section__eyebrow">Client Stories</p>
+                    <h2 class="section__title" id="testimonials-title">Voices of Distinction</h2>
+                </div>
+                
+                <div class="testimonials__slider" role="region" aria-label="Client testimonials" data-slider>
+                    <div class="testimonials__track" data-slider-track>
+                        <article class="testimonial" data-slide>
+                            <blockquote class="testimonial__quote">
+                                "NOVA doesn't just create jewelry—they create legacies. The Signature tier has transformed how our family thinks about heirlooms. Every piece tells our story."
+                            </blockquote>
+                            <footer class="testimonial__author">
+                                <div class="testimonial__avatar" aria-hidden="true"></div>
+                                <div class="testimonial__info">
+                                    <cite class="testimonial__name">Isabelle Mercier</cite>
+                                    <p class="testimonial__role">Signature Member since 2019</p>
+                                </div>
+                            </footer>
+                        </article>
+                        
+                        <article class="testimonial" data-slide>
+                            <blockquote class="testimonial__quote">
+                                "The Legacy experience is unlike anything else. Having a dedicated atelier visit where master craftsmen bring your vision to life—it's the definition of luxury."
+                            </blockquote>
+                            <footer class="testimonial__author">
+                                <div class="testimonial__avatar" aria-hidden="true"></div>
+                                <div class="testimonial__info">
+                                    <cite class="testimonial__name">James Thornton</cite>
+                                    <p class="testimonial__role">Legacy Member since 2017</p>
+                                </div>
+                            </footer>
+                        </article>
+                        
+                        <article class="testimonial" data-slide>
+                            <blockquote class="testimonial__quote">
+                                "Starting with Essence was the perfect decision. The annual consultation helped me build a collection that grows with meaning each year. Now upgrading to Signature."
+                            </blockquote>
+                            <footer class="testimonial__author">
+                                <div class="testimonial__avatar" aria-hidden="true"></div>
+                                <div class="testimonial__info">
+                                    <cite class="testimonial__name">Aisha Rahman</cite>
+                                    <p class="testimonial__role">Essence Member since 2021</p>
+                                </div>
+                            </footer>
+                        </article>
+                    </div>
+                    
+                    <div class="testimonials__controls" aria-label="Testimonial navigation">
+                        <button class="testimonials__btn testimonials__btn--prev" aria-label="Previous testimonial" data-slider-prev>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="15 18 9 12 15 6"/>
+                            </svg>
+                        </button>
+                        <div class="testimonials__dots" role="tablist" aria-label="Testimonial indicators" data-slider-dots></div>
+                        <button class="testimonials__btn testimonials__btn--next" aria-label="Next testimonial" data-slider-next>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="9 18 15 12 9 6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="section contact" id="contact" aria-labelledby="contact-title" data-scroll-reveal>
+            <div class="container">
+                <div class="contact__grid">
+                    <div class="contact__content" data-scroll-reveal data-scroll-reveal-delay="100">
+                        <p class="section__eyebrow">Start Your Journey</p>
+                        <h2 class="section__title" id="contact-title">Let's Create Something Extraordinary</h2>
+                        <p class="contact__lead">Whether you're beginning your collection or seeking a bespoke creation, our advisors are here to guide you. Schedule a private consultation at your convenience.</p>
+                        
+                        <div class="contact__methods">
+                            <a href="mailto:concierge@nova.example.com" class="contact__method">
+                                <div class="contact__method-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div class="contact__method-info">
+                                    <span class="contact__method-label">Email Concierge</span>
+                                    <span class="contact__method-value">concierge@nova.example.com</span>
+                                </div>
+                            </a>
+                            
+                            <a href="tel:+15550199" class="contact__method">
+                                <div class="contact__method-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact__method-info">
+                                    <span class="contact__method-label">Call Direct</span>
+                                    <span class="contact__method-value">+1 (555) 019-9000</span>
+                                </div>
+                            </a>
+                            
+                            <address class="contact__method">
+                                <div class="contact__method-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div class="contact__method-info">
+                                    <span class="contact__method-label">Visit Atelier</span>
+                                    <span class="contact__method-value">125 Rue Saint-Honoré, Paris</span>
+                                </div>
+                            </address>
+                        </div>
+                    </div>
+                    
+                    <form class="contact__form" id="contactForm" action="#contact" method="POST" data-scroll-reveal data-scroll-reveal-delay="200">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Full Name</label>
+                            <input type="text" id="name" name="name" class="form__input" required autocomplete="name" aria-describedby="nameError">
+                            <p class="form__error" id="nameError" aria-live="polite"></p>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form__input" required autocomplete="email" aria-describedby="emailError">
+                            <p class="form__error" id="emailError" aria-live="polite"></p>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="phone" class="form__label">Phone (Optional)</label>
+                            <input type="tel" id="phone" name="phone" class="form__input" autocomplete="tel" aria-describedby="phoneError">
+                            <p class="form__error" id="phoneError" aria-live="polite"></p>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="interest" class="form__label">Interest</label>
+                            <select id="interest" name="interest" class="form__select" required aria-describedby="interestError">
+                                <option value="">Select an option</option>
+                                <option value="essence">Essence Tier</option>
+                                <option value="signature">Signature Tier</option>
+                                <option value="legacy">Legacy Tier</option>
+                                <option value="bespoke">Bespoke Creation</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                            <p class="form__error" id="interestError" aria-live="polite"></p>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="message" class="form__label">Message</label>
+                            <textarea id="message" name="message" class="form__textarea" rows="5" placeholder="Tell us about your vision..." aria-describedby="messageError"></textarea>
+                            <p class="form__error" id="messageError" aria-live="polite"></p>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full form__submit">
+                            <span class="form__submit-text">Request Consultation</span>
+                            <span class="form__submit-loader" aria-hidden="true"></span>
+                        </button>
+                        
+                        <p class="form__privacy">By submitting, you agree to our <a href="#privacy">Privacy Policy</a> and consent to being contacted by our concierge team.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo" aria-label="NOVA Home">
+                        <svg class="footer__logo-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                            <path d="M24 4L8 20v16l16 12 16-12V20L24 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M24 12v20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <span class="footer__logo-text">NOVA</span>
+                    </a>
+                    <p class="footer__tagline">Exceptional craftsmanship, timeless elegance.</p>
+                    
+                    <div class="footer__social" role="list" aria-label="Social links">
+                        <a href="#instagram" class="footer__social-link" aria-label="Instagram" role="listitem">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="#twitter" class="footer__social-link" aria-label="Twitter" role="listitem">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#linkedin" class="footer__social-link" aria-label="LinkedIn" role="listitem">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="#pinterest" class="footer__social-link" aria-label="Pinterest" role="listitem">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <line x1="12" y1="17" x2="12" y2="22"/>
+                                <path d="M5 17h14v-2.5a5 5 0 0 0-5-5A5 5 0 0 0 5 14.5V17z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <nav class="footer__nav" aria-label="Footer navigation">
+                    <div class="footer__nav-col">
+                        <h4 class="footer__nav-title">Collections</h4>
+                        <ul role="list">
+                            <li><a href="#gallery" class="footer__nav-link">Aurora Collection</a></li>
+                            <li><a href="#gallery" class="footer__nav-link">Noir Collection</a></li>
+                            <li><a href="#gallery" class="footer__nav-link">Lumina Collection</a></li>
+                            <li><a href="#gallery" class="footer__nav-link">New Arrivals</a></li>
+                            <li><a href="#gallery" class="footer__nav-link">Archive Pieces</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__nav-col">
+                        <h4 class="footer__nav-title">Services</h4>
+                        <ul role="list">
+                            <li><a href="#pricing" class="footer__nav-link">Membership Tiers</a></li>
+                            <li><a href="#contact" class="footer__nav-link">Bespoke Design</a></li>
+                            <li><a href="#contact" class="footer__nav-link">Private Consultations</a></li>
+                            <li><a href="#contact" class="footer__nav-link">Care & Repair</a></li>
+                            <li><a href="#contact" class="footer__nav-link">Secure Storage</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__nav-col">
+                        <h4 class="footer__nav-title">Company</h4>
+                        <ul role="list">
+                            <li><a href="#about" class="footer__nav-link">Our Story</a></li>
+                            <li><a href="#about" class="footer__nav-link">Sustainability</a></li>
+                            <li><a href="#about" class="footer__nav-link">Artisan Profiles</a></li>
+                            <li><a href="#contact" class="footer__nav-link">Careers</a></li>
+                            <li><a href="#contact" class="footer__nav-link">Press</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__nav-col">
+                        <h4 class="footer__nav-title">Support</h4>
+                        <ul role="list">
+                            <li><a href="#contact" class="footer__nav-link">Contact Concierge</a></li>
+                            <li><a href="#faq" class="footer__nav-link">FAQ</a></li>
+                            <li><a href="#shipping" class="footer__nav-link">Shipping & Returns</a></li>
+                            <li><a href="#warranty" class="footer__nav-link">Warranty</a></li>
+                            <li><a href="#accessibility" class="footer__nav-link">Accessibility</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2024 NOVA. All rights reserved.</p>
+                <nav class="footer__legal" aria-label="Legal links">
+                    <a href="#privacy" class="footer__legal-link">Privacy Policy</a>
+                    <a href="#terms" class="footer__legal-link">Terms of Service</a>
+                    <a href="#cookies" class="footer__legal-link">Cookie Policy</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent" role="dialog" aria-labelledby="cookieTitle" aria-describedby="cookieDesc" hidden>
+        <div class="cookie-consent__content">
+            <h3 id="cookieTitle" class="cookie-consent__title">Cookie Preferences</h3>
+            <p id="cookieDesc" class="cookie-consent__desc">We use cookies to enhance your experience. Essential cookies are required for the site to function. Analytics help us improve.</p>
+            <div class="cookie-consent__actions">
+                <button class="btn btn--secondary cookie-consent__btn" id="cookieReject">Reject Optional</button>
+                <button class="btn btn--primary cookie-consent__btn" id="cookieAccept">Accept All</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer" aria-live="polite" aria-label="Notifications"></div>
+    
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

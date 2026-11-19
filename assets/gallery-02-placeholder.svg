@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" fill="none">
+    <defs>
+        <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#2D2926"/>
+            <stop offset="100%" stop-color="#1C1917"/>
+        </linearGradient>
+        <radialGradient id="g2Glow" cx="50%" cy="30%" r="60%">
+            <stop offset="0%" stop-color="#44403C" stop-opacity="0.3"/>
+            <stop offset="100%" stop-color="#2D2926" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="g2Accent" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#A16207" stop-opacity="0"/>
+            <stop offset="50%" stop-color="#A16207" stop-opacity="1"/>
+            <stop offset="100%" stop-color="#A16207" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+    
+    <rect width="800" height="1000" fill="url(#g2)"/>
+    <ellipse cx="400" cy="300" rx="350" ry="250" fill="url(#g2Glow)"/>
+    
+    <!-- Abstract watch/timepiece shapes -->
+    <g fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5">
+        <circle cx="400" cy="500" r="140"/>
+        <circle cx="400" cy="500" r="100"/>
+        <circle cx="400" cy="500" r="60"/>
+        <circle cx="400" cy="500" r="20"/>
+    </g>
+    
+    <!-- Accent lines -->
+    <g stroke="url(#g2Accent)" stroke-width="2" stroke-linecap="round">
+        <line x1="400" y1="360" x2="400" y2="280"/>
+        <line x1="400" y1="640" x2="400" y2="720"/>
+        <line x1="260" y1="500" x2="180" y2="500"/>
+        <line x1="540" y1="500" x2="620" y2="500"/>
+    </g>
+    
+    <!-- Small dots around center -->
+    <g fill="#A16207">
+        <circle cx="400" cy="360" r="4"/>
+        <circle cx="400" cy="640" r="4"/>
+        <circle cx="260" cy="500" r="4"/>
+        <circle cx="540" cy="500" r="4"/>
+    </g>
+    
+    <!-- Placeholder text area -->
+    <g fill="rgba(255,255,255,0.15)" transform="translate(400, 850)">
+        <text x="0" y="0" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="400" fill="rgba(255,255,255,0.4)">gallery-02.jpg</text>
+        <text x="0" y="35" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="rgba(255,255,255,0.3)">Second gallery reference image</text>
+    </g>
+</svg>
