@@ -2543,35 +2543,44 @@ small {
 }
 
 .value-card {
-  padding: var(--space-2xl).
   background: var(--color-card).
   border: 1px solid var(--color-border).
   border-radius: var(--radius-xl).
-  text-align: center.
-  transition: all var(--transition-base).
+  overflow: hidden.
+  transition: all var(--transition-slow).
+  display: flex.
+  flex-direction: column.
 }
 
 .value-card:hover {
   border-color: var(--color-accent).
-  box-shadow: var(--shadow-md).
-  transform: translateY(-4px).
+  box-shadow: var(--shadow-xl).
+  transform: translateY(-8px).
 }
 
-.value-card__icon {
+.value-card__image-wrapper {
+  aspect-ratio: 4/3.
+  overflow: hidden.
+}
+
+.value-card__image {
+  width: 100%.
+  height: 100%.
+  object-fit: cover.
+  transition: transform var(--transition-slower).
+}
+
+.value-card:hover .value-card__image {
+  transform: scale(1.05).
+}
+
+.value-card__content {
+  padding: var(--space-xl).
+  text-align: center.
+  flex: 1.
   display: flex.
-  align-items: center.
+  flex-direction: column.
   justify-content: center.
-  width: 64px.
-  height: 64px.
-  background: rgba(166, 141, 105, 0.1).
-  border-radius: var(--radius-lg).
-  color: var(--color-accent).
-  margin: 0 auto var(--space-lg).
-}
-
-.value-card__icon svg {
-  width: 32px.
-  height: 32px.
 }
 
 .value-card__title {
@@ -2737,34 +2746,44 @@ small {
 }
 
 .location-card {
-  padding: var(--space-2xl).
   background: var(--color-card).
   border: 1px solid var(--color-border).
   border-radius: var(--radius-xl).
-  text-align: center.
-  transition: all var(--transition-base).
+  overflow: hidden.
+  transition: all var(--transition-slow).
+  display: flex.
+  flex-direction: column.
 }
 
 .location-card:hover {
   border-color: var(--color-accent).
-  box-shadow: var(--shadow-md).
+  box-shadow: var(--shadow-xl).
+  transform: translateY(-8px).
 }
 
-.location-card__icon {
+.location-card__image-wrapper {
+  aspect-ratio: 4/3.
+  overflow: hidden.
+}
+
+.location-card__image {
+  width: 100%.
+  height: 100%.
+  object-fit: cover.
+  transition: transform var(--transition-slower).
+}
+
+.location-card:hover .location-card__image {
+  transform: scale(1.05).
+}
+
+.location-card__content {
+  padding: var(--space-xl).
+  text-align: center.
+  flex: 1.
   display: flex.
-  align-items: center.
+  flex-direction: column.
   justify-content: center.
-  width: 64px.
-  height: 64px.
-  background: rgba(166, 141, 105, 0.1).
-  border-radius: var(--radius-lg).
-  color: var(--color-accent).
-  margin: 0 auto var(--space-lg).
-}
-
-.location-card__icon svg {
-  width: 32px.
-  height: 32px.
 }
 
 .location-card__city {
@@ -2795,6 +2814,100 @@ small {
 
 @media (max-width: 768px) {
   .locations__grid {
+    grid-template-columns: 1fr.
+  }
+}
+
+/* ==========================================================================
+   Ateliers (International Ateliers)
+   ========================================================================== */
+
+.ateliers {
+  background: var(--color-background).
+}
+
+.ateliers__grid {
+  display: grid.
+  grid-template-columns: repeat(3, 1fr).
+  gap: var(--space-lg).
+}
+
+.atelier-card {
+  background: var(--color-card).
+  border: 1px solid var(--color-border).
+  border-radius: var(--radius-xl).
+  overflow: hidden.
+  transition: all var(--transition-slow).
+  display: flex.
+  flex-direction: column.
+}
+
+.atelier-card:hover {
+  border-color: var(--color-accent).
+  box-shadow: var(--shadow-xl).
+  transform: translateY(-8px).
+}
+
+.atelier-card__image-wrapper {
+  aspect-ratio: 4/3.
+  overflow: hidden.
+}
+
+.atelier-card__image {
+  width: 100%.
+  height: 100%.
+  object-fit: cover.
+  transition: transform var(--transition-slower).
+}
+
+.atelier-card:hover .atelier-card__image {
+  transform: scale(1.05).
+}
+
+.atelier-card__content {
+  padding: var(--space-xl).
+  text-align: center.
+  flex: 1.
+  display: flex.
+  flex-direction: column.
+  justify-content: center.
+}
+
+.atelier-card__city {
+  font-family: var(--font-heading).
+  font-size: 1.375rem.
+  font-weight: 500.
+  color: var(--color-foreground).
+  margin-bottom: var(--space-md).
+}
+
+.atelier-card__address {
+  font-size: 0.9375rem.
+  line-height: 1.7.
+  color: var(--color-muted-foreground).
+  margin-bottom: var(--space-md).
+}
+
+.atelier-card__phone {
+  font-size: 0.9375rem.
+  font-weight: 500.
+  color: var(--color-accent).
+  transition: color var(--transition-fast).
+  margin-bottom: var(--space-sm).
+}
+
+.atelier-card__phone:hover {
+  color: #8F7A5C.
+}
+
+.atelier-card__note {
+  font-size: 0.875rem.
+  color: var(--color-muted-foreground).
+  margin: 0.
+}
+
+@media (max-width: 768px) {
+  .ateliers__grid {
     grid-template-columns: 1fr.
   }
 }
@@ -3486,6 +3599,295 @@ small {
 @media (max-width: 640px) {
   .journal-more__grid {
     grid-template-columns: 1fr.
+  }
+}
+
+/* ==========================================================================
+   Article Page
+   ========================================================================== */
+
+.article-page {
+  background: var(--color-card).
+}
+
+.article-page__header {
+  padding: var(--space-3xl) 0 var(--space-xl).
+  background: var(--color-card).
+  border-bottom: 1px solid var(--color-border).
+}
+
+.article-page__breadcrumb {
+  display: flex.
+  align-items: center.
+  gap: var(--space-sm).
+  font-size: 0.875rem.
+  color: var(--color-muted-foreground).
+  margin-bottom: var(--space-xl).
+}
+
+.article-page__breadcrumb .breadcrumb__link {
+  transition: color var(--transition-fast).
+}
+
+.article-page__breadcrumb .breadcrumb__link:hover {
+  color: var(--color-accent).
+}
+
+.article-page__breadcrumb .breadcrumb__separator {
+  color: var(--color-muted-foreground).
+}
+
+.article-page__breadcrumb .breadcrumb__current {
+  color: var(--color-foreground).
+  font-weight: 500.
+}
+
+.article-page__meta {
+  display: flex.
+  flex-wrap: wrap.
+  gap: var(--space-md).
+  font-size: 0.875rem.
+  color: var(--color-muted-foreground).
+  margin-bottom: var(--space-lg).
+}
+
+.article-page__category {
+  color: var(--color-accent).
+  font-weight: 500.
+}
+
+.article-page__author {
+  font-weight: 500.
+}
+
+.article-page__title {
+  font-size: clamp(2.5rem, 5vw, 4rem).
+  line-height: 1.1.
+  margin-bottom: var(--space-md).
+}
+
+.article-page__excerpt {
+  font-size: 1.25rem.
+  font-weight: 300.
+  line-height: 1.7.
+  color: var(--color-muted-foreground).
+  max-width: 700px.
+}
+
+.article-page__hero {
+  position: relative.
+  overflow: hidden.
+}
+
+.article-page__image {
+  width: 100%.
+  height: 600px.
+  object-fit: cover.
+}
+
+@media (max-width: 768px) {
+  .article-page__image {
+    height: 400px.
+  }
+}
+
+.article-page__content {
+  padding: var(--space-4xl) 0.
+}
+
+.article-page__body {
+  max-width: 800px.
+  margin: 0 auto.
+}
+
+.article-page__body h2 {
+  font-family: var(--font-heading).
+  font-size: clamp(1.75rem, 3vw, 2.5rem).
+  margin: var(--space-3xl) 0 var(--space-lg).
+  padding-top: var(--space-xl).
+  border-top: 1px solid var(--color-border).
+}
+
+.article-page__body h2:first-child {
+  margin-top: 0.
+  border-top: none.
+  padding-top: 0.
+}
+
+.article-page__body h3 {
+  font-family: var(--font-heading).
+  font-size: clamp(1.375rem, 2.5vw, 1.75rem).
+  margin: var(--space-2xl) 0 var(--space-md).
+}
+
+.article-page__body p {
+  margin-bottom: var(--space-lg).
+  font-size: 1.0625rem.
+  line-height: 1.8.
+  color: var(--color-foreground).
+}
+
+.article-page__body .lead {
+  font-size: 1.25rem.
+  font-weight: 300.
+  line-height: 1.8.
+  color: var(--color-muted-foreground).
+  margin-bottom: var(--space-xl).
+}
+
+.article-page__footer {
+  margin-top: var(--space-4xl).
+  padding-top: var(--space-3xl).
+  border-top: 1px solid var(--color-border).
+}
+
+.article-page__tags {
+  display: flex.
+  flex-wrap: wrap.
+  gap: var(--space-sm).
+  margin-bottom: var(--space-2xl).
+}
+
+.article-page__tag {
+  font-size: 0.8125rem.
+  font-weight: 500.
+  color: var(--color-accent).
+  background: rgba(166, 141, 105, 0.1).
+  padding: var(--space-xs) var(--space-md).
+  border-radius: var(--radius-full).
+  text-transform: uppercase.
+  letter-spacing: 0.05em.
+}
+
+.article-page__author-bio {
+  display: flex.
+  gap: var(--space-lg).
+  padding: var(--space-xl).
+  background: var(--color-background).
+  border: 1px solid var(--color-border).
+  border-radius: var(--radius-xl).
+  margin-bottom: var(--space-2xl).
+}
+
+.article-page__author-avatar {
+  width: 80px.
+  height: 80px.
+  border-radius: var(--radius-full).
+  object-fit: cover.
+  flex-shrink: 0.
+}
+
+.article-page__author-name {
+  font-family: var(--font-heading).
+  font-size: 1.125rem.
+  font-weight: 500.
+  color: var(--color-foreground).
+  margin-bottom: var(--space-xs).
+}
+
+.article-page__author-role {
+  font-size: 0.875rem.
+  font-weight: 500.
+  color: var(--color-accent).
+  margin-bottom: var(--space-sm).
+}
+
+.article-page__author-desc {
+  font-size: 0.9375rem.
+  line-height: 1.7.
+  color: var(--color-muted-foreground).
+  margin: 0.
+}
+
+.article-page__share {
+  display: flex.
+  align-items: center.
+  gap: var(--space-md).
+}
+
+.article-page__share-label {
+  font-size: 0.875rem.
+  font-weight: 500.
+  color: var(--color-muted-foreground).
+  text-transform: uppercase.
+  letter-spacing: 0.1em.
+}
+
+.article-page__share-link {
+  display: flex.
+  align-items: center.
+  justify-content: center.
+  width: 40px.
+  height: 40px.
+  background: var(--color-muted).
+  border-radius: var(--radius-full).
+  color: var(--color-muted-foreground).
+  transition: all var(--transition-base).
+}
+
+.article-page__share-link:hover {
+  background: var(--color-accent).
+  color: var(--color-on-accent).
+}
+
+.article-page__share-link svg {
+  width: 20px.
+  height: 20px.
+}
+
+.article-page__nav {
+  display: flex.
+  justify-content: space-between.
+  margin-top: var(--space-3xl).
+  padding-top: var(--space-2xl).
+  border-top: 1px solid var(--color-border).
+}
+
+.article-page__prev,
+.article-page__next {
+  display: flex.
+  flex-direction: column.
+  gap: var(--space-xs).
+  max-width: 280px.
+}
+
+.article-page__prev {
+  text-align: left.
+}
+
+.article-page__next {
+  text-align: right.
+}
+
+.article-page__nav-label {
+  font-size: 0.75rem.
+  font-weight: 600.
+  letter-spacing: 0.1em.
+  text-transform: uppercase.
+  color: var(--color-accent).
+}
+
+.article-page__nav-title {
+  font-family: var(--font-heading).
+  font-size: 1rem.
+  font-weight: 500.
+  color: var(--color-foreground).
+  transition: color var(--transition-fast).
+}
+
+.article-page__prev:hover .article-page__nav-title,
+.article-page__next:hover .article-page__nav-title {
+  color: var(--color-accent).
+}
+
+@media (max-width: 768px) {
+  .article-page__nav {
+    flex-direction: column.
+    gap: var(--space-lg).
+  }
+
+  .article-page__next {
+    text-align: left.
   }
 }
 

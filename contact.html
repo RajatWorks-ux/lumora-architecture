@@ -159,24 +159,6 @@
                                     <p class="contact-method__note">By appointment only</p>
                                 </div>
                             </div>
-
-                            <div class="contact-method" data-scroll-reveal data-scroll-reveal-delay="500">
-                                <div class="contact-method__icon" aria-hidden="true">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <line x1="2" y1="12" x2="22" y2="12"/>
-                                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                                    </svg>
-                                </div>
-                                <div class="contact-method__details">
-                                    <h3 class="contact-method__label">International Ateliers</h3>
-                                    <div class="contact-method__value">
-                                        <p>London: 18 Albemarle Street, Mayfair, W1S 4HA</p>
-                                        <p>New York: 450 West 14th Street, NY 10014</p>
-                                    </div>
-                                    <p class="contact-method__note">By appointment only</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -267,6 +249,64 @@
 
                         <p class="form__privacy">By submitting, you agree to our <a href="/privacy.html">Privacy Policy</a> and consent to being contacted by our studio team. This form does not connect to a live backend — it demonstrates validation and UI states only.</p>
                     </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- International Ateliers -->
+        <section class="section ateliers" id="ateliers" aria-labelledby="ateliers-title" data-scroll-reveal>
+            <div class="container">
+                <header class="section__header">
+                    <p class="section__eyebrow">International Ateliers</p>
+                    <h2 class="section__title" id="ateliers-title">Where we work</h2>
+                    <p class="section__description">Our three ateliers serve as creative hubs for projects worldwide. Each location reflects its context while sharing our unified design philosophy.</p>
+                </header>
+
+                <div class="ateliers__grid">
+                    <article class="atelier-card" data-scroll-reveal data-scroll-reveal-delay="100">
+                        <div class="atelier-card__image-wrapper">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="assets/projects/location-paris.jpg" type="image/jpeg">
+                                <img src="assets/projects/location-paris.jpg" alt="Paris atelier — historic architecture, Rue Saint-Honoré" class="atelier-card__image" loading="lazy" width="400" height="300">
+                            </picture>
+                        </div>
+                        <div class="atelier-card__content">
+                            <h3 class="atelier-card__city">Paris</h3>
+                            <p class="atelier-card__address">125 Rue Saint-Honoré<br>75001 Paris, France</p>
+                            <a href="tel:+331XXXXXX" class="atelier-card__phone">+33 1 XX XX XX XX</a>
+                            <p class="atelier-card__note">By appointment only</p>
+                        </div>
+                    </article>
+
+                    <article class="atelier-card" data-scroll-reveal data-scroll-reveal-delay="200">
+                        <div class="atelier-card__image-wrapper">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="assets/projects/location-london.jpg" type="image/jpeg">
+                                <img src="assets/projects/location-london.jpg" alt="London atelier — Mayfair architecture, Albemarle Street" class="atelier-card__image" loading="lazy" width="400" height="300">
+                            </picture>
+                        </div>
+                        <div class="atelier-card__content">
+                            <h3 class="atelier-card__city">London</h3>
+                            <p class="atelier-card__address">18 Albemarle Street<br>Mayfair, W1S 4HA, UK</p>
+                            <a href="tel:+4420XXXXXX" class="atelier-card__phone">+44 20 XXXX XXXX</a>
+                            <p class="atelier-card__note">By appointment only</p>
+                        </div>
+                    </article>
+
+                    <article class="atelier-card" data-scroll-reveal data-scroll-reveal-delay="300">
+                        <div class="atelier-card__image-wrapper">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="assets/projects/location-new-york.jpg" type="image/jpeg">
+                                <img src="assets/projects/location-new-york.jpg" alt="New York atelier — West 14th Street, Meatpacking District architecture" class="atelier-card__image" loading="lazy" width="400" height="300">
+                            </picture>
+                        </div>
+                        <div class="atelier-card__content">
+                            <h3 class="atelier-card__city">New York</h3>
+                            <p class="atelier-card__address">450 West 14th Street<br>New York, NY 10014, USA</p>
+                            <a href="tel:+1212XXXXXX" class="atelier-card__phone">+1 212 XXX XXXX</a>
+                            <p class="atelier-card__note">By appointment only</p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
