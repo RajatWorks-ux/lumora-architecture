@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LUMORA — Selected works. Explore our portfolio of luxury residential, hospitality, and cultural architecture projects worldwide.">
+    <meta name="theme-color" content="#F5F2EC">
+    <title>Projects | LUMORA</title>
+
+    <link rel="canonical" href="https://lumora.example.com/projects.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Projects | LUMORA">
+    <meta property="og:description" content="Explore our portfolio of luxury residential, hospitality, and cultural architecture projects worldwide.">
+    <meta property="og:image" content="assets/projects-hero-desktop.jpg">
+    <meta property="og:url" content="https://lumora.example.com/projects.html">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Projects | LUMORA">
+    <meta name="twitter:description" content="Explore our portfolio of luxury residential, hospitality, and cultural architecture projects worldwide.">
+    <meta name="twitter:image" content="assets/projects-hero-desktop.jpg">
+
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Projects",
+        "description": "Explore our portfolio of luxury residential, hospitality, and cultural architecture projects worldwide.",
+        "url": "https://lumora.example.com/projects.html"
+    }
+    </script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header" id="header" role="banner">
+        <nav class="nav container" aria-label="Main navigation">
+            <a href="/" class="nav__logo" aria-label="LUMORA Home">
+                <svg class="nav__logo-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                    <path d="M24 6L10 18v20l14 10 14-10V18L24 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M24 14v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <span class="nav__logo-text">LUMORA</span>
+            </a>
+
+            <div class="nav__links" id="navLinks" role="navigation">
+                <a href="/about.html" class="nav__link">About</a>
+                <a href="/projects.html" class="nav__link" aria-current="page">Projects</a>
+                <a href="/services.html" class="nav__link">Services</a>
+                <a href="/journal.html" class="nav__link">Journal</a>
+                <a href="/contact.html" class="nav__link">Contact</a>
+            </div>
+
+            <div class="nav__actions">
+                <button class="nav__menu-toggle" id="navMenuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+                    <span class="nav__menu-bar" aria-hidden="true"></span>
+                    <span class="nav__menu-bar" aria-hidden="true"></span>
+                    <span class="nav__menu-bar" aria-hidden="true"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <!-- Page Hero -->
+        <section class="page-hero" aria-labelledby="page-hero-title">
+            <div class="page-hero__background" aria-hidden="true">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="assets/projects-hero-mobile.jpg" type="image/jpeg">
+                    <img src="assets/projects-hero-desktop.jpg" alt="Collage of architectural projects — villas, hotels, cultural spaces" class="page-hero__image" loading="eager" fetchpriority="high" width="1920" height="800">
+                </picture>
+                <div class="page-hero__overlay" aria-hidden="true"></div>
+            </div>
+            <div class="container">
+                <header class="page-hero__content" data-scroll-reveal>
+                    <p class="page-hero__eyebrow" data-scroll-reveal-delay="100">Our Portfolio</p>
+                    <h1 class="page-hero__title" id="page-hero-title" data-scroll-reveal-delay="200">Selected Works</h1>
+                    <p class="page-hero__description" data-scroll-reveal-delay="300">A curated collection of residential, hospitality, and cultural projects — each a dialogue between site, program, and material. All projects shown are conceptual portfolio pieces.</p>
+                </header>
+            </div>
+        </section>
+
+        <!-- Category Filters -->
+        <section class="section filters-section" aria-labelledby="filters-title">
+            <div class="container">
+                <div class="filters" role="group" aria-label="Project category filters" data-filters>
+                    <button class="filter-btn is-active" data-filter="all" aria-pressed="true">All Projects</button>
+                    <button class="filter-btn" data-filter="residential" aria-pressed="false">Residential</button>
+                    <button class="filter-btn" data-filter="hospitality" aria-pressed="false">Hospitality</button>
+                    <button class="filter-btn" data-filter="cultural" aria-pressed="false">Cultural</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="section projects-grid-section" id="projects-grid" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="projects-masonry" role="list" data-projects-grid>
+                    <!-- Project 1: The Limestone Residence -->
+                    <article class="project-card" role="listitem" data-category="residential" data-scroll-reveal data-scroll-reveal-delay="100">
+                        <div class="project-card__image-wrapper">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="assets/projects/limestone-residence-mobile.jpg" type="image/jpeg">
+                                <img src="assets/projects/limestone-residence-desktop.jpg" alt="The Limestone Residence — contemporary villa with warm limestone facade, floor-to-ceiling glazing, and sculptural pool" class="project-card__image" loading="lazy" width="800" height="1000">
+                            </picture>
+                            <div class="project-card__overlay">
+                                <div class="project-card__meta">
+                                    <span class="project-card__category">Private Residence</span>
+                                    <span class="project-card__location">Côte d'Azur, France</span>
+                                </div>
+                                <h3 class="project-card__title">The Limestone Residence</h3>
+                                <p class="project-card__description">A coastal villa where warm limestone meets expansive glazing, blurring the boundary between interior and Mediterranean horizon.</p>
+                                <a href="/projects/limestone-residence.html" class="project-card__link">View Project <span aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Casa Verde -->
+                    <article class="project-card" role="listitem" data-category="residential" data-scroll-reveal data-scroll-reveal-delay="200">
+                        <div class="project-card__image-wrapper">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="assets/projects/casa-verde-mobile.jpg" type="image/jpeg">
+                                <img src="assets/projects/casa-verde-desktop.jpg" alt="Casa Verde — tropical modern residence with indoor-outdoor living, timber screens, and lush courtyard gardens" class="project-card__image" loading="lazy" width="800" height="1000">
+                            </picture>
+                            <div class="project-card__overlay">
+                                <div class="project-card__meta">
+                                    <span class="project-card__category">Private Residence</span>
+                                    <span class="project-card__location">Tulum, Mexico</span>
+                                </div>
+                                <h3 class="project-card__title">Casa Verde</h3>
+                                <p class="project-card__description">A tropical sanctuary woven into the jungle canopy, where timber screens filter light and courtyards bring nature into every room.</p>
+                                <a href="/projects/casa-verde.html" class="project-card__link">View Project <span aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: The Quiet House -->
+                    <article class="project-card" role="listitem" data-category="residential" data-scroll-reveal data-scroll-reveal-delay="300">
+                        <div class="project-card__image-wrapper">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="assets/projects/quiet-house-mobile.jpg" type="image/jpeg">
+                                <img src="assets/projects/quiet-house-desktop.jpg" alt="The Quiet House — minimalist concrete and timber residence with zen garden, reflecting pool, and meditative spaces" class="project-card__image" loading="lazy" width="800" height="1000">
+                            </picture>
+                            <div class="project-card__overlay">
+                                <div class="project-card__meta">
+                                    <span class="project-card__category">Private Residence</span>
+                                    <span class="project-card__location">Kyoto, Japan</span>
+                                </div>
+                                <h3 class="project-card__title">The Quiet House</h3>
+                                <p class="project-card__description">A minimalist retreat of concrete, timber, and water — designed for stillness in the heart of historic Kyoto.</p>
+                                <a href="/projects/quiet-house.html" class="project-card__link">View Project <span aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Villa Solara -->
+                    <article class="project-card" role="listitem" data-category="residential" data-scroll-reveal data-scroll-reveal-delay="400">
+                        <div class="project-card__image-wrapper">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="assets/projects/villa-solara-mobile.jpg" type="image/jpeg">
+                                <img src="assets/projects/villa-solara-desktop.jpg" alt="Villa Solara — hillside villa with terraced gardens, infinity pool, and panoramic valley views" class="project-card__image" loading="lazy" width="800" height="1000">
+                            </picture>
+                            <div class="project-card__overlay">
+                                <div class="project-card__meta">
+                                    <span class="project-card__category">Private Residence</span>
+                                    <span class="project-card__location">Tuscany, Italy</span>
+                                </div>
+                                <h3 class="project-card__title">Villa Solara</h3>
+                                <p class="project-card__description">A hillside villa cascading through terraced olive groves, framing panoramic views of the Val d'Orcia.</p>
+                                <a href="/projects/villa-solara.html" class="project-card__link">View Project <span aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Hotel Amara -->
+                    <article class="project-card" role="listitem" data-category="hospitality" data-scroll-reveal data-scroll-reveal-delay="500">
+                        <div class="project-card__image-wrapper">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="assets/projects/hotel-amara-mobile.jpg" type="image/jpeg">
+                                <img src="assets/projects/hotel-amara-desktop.jpg" alt="Hotel Amara — boutique hotel with carved stone facade, courtyard pool, and rooftop terrace" class="project-card__image" loading="lazy" width="800" height="1000">
+                            </picture>
+                            <div class="project-card__overlay">
+                                <div class="project-card__meta">
+                                    <span class="project-card__category">Boutique Hotel</span>
+                                    <span class="project-card__location">Marrakech, Morocco</span>
+                                </div>
+                                <h3 class="project-card__title">Hotel Amara</h3>
+                                <p class="project-card__description">A riad-inspired boutique hotel where traditional Moroccan craftsmanship meets contemporary luxury.</p>
+                                <a href="/projects/hotel-amara.html" class="project-card__link">View Project <span aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: The Cliff House -->
+                    <article class="project-card" role="listitem" data-category="residential" data-scroll-reveal data-scroll-reveal-delay="600">
+                        <div class="project-card__image-wrapper">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="assets/projects/cliff-house-mobile.jpg" type="image/jpeg">
+                                <img src="assets/projects/cliff-house-desktop.jpg" alt="The Cliff House — dramatic cliffside residence cantilevered over ocean, glass and concrete" class="project-card__image" loading="lazy" width="800" height="1000">
+                            </picture>
+                            <div class="project-card__overlay">
+                                <div class="project-card__meta">
+                                    <span class="project-card__category">Private Residence</span>
+                                    <span class="project-card__location">Big Sur, California</span>
+                                </div>
+                                <h3 class="project-card__title">The Cliff House</h3>
+                                <p class="project-card__description">A dramatic residence cantilevered over the Pacific, where architecture surrenders to the raw power of the coastline.</p>
+                                <a href="/projects/cliff-house.html" class="project-card__link">View Project <span aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 7: Aurum Spa & Resort -->
+                    <article class="project-card" role="listitem" data-category="hospitality" data-scroll-reveal data-scroll-reveal-delay="700">
+                        <div class="project-card__image-wrapper">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="assets/projects/aurum-spa-mobile.jpg" type="image/jpeg">
+                                <img src="assets/projects/aurum-spa-desktop.jpg" alt="Aurum Spa & Resort — wellness retreat with thermal pools, treatment pavilions, and meditation gardens" class="project-card__image" loading="lazy" width="800" height="1000">
+                            </picture>
+                            <div class="project-card__overlay">
+                                <div class="project-card__meta">
+                                    <span class="project-card__category">Wellness Resort</span>
+                                    <span class="project-card__location">Baden-Baden, Germany</span>
+                                </div>
+                                <h3 class="project-card__title">Aurum Spa & Resort</h3>
+                                <p class="project-card__description">A thermal wellness retreat integrating historic bathhouse architecture with contemporary spa design.</p>
+                                <a href="/projects/aurum-spa.html" class="project-card__link">View Project <span aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 8: Maison de Lumière -->
+                    <article class="project-card" role="listitem" data-category="cultural" data-scroll-reveal data-scroll-reveal-delay="800">
+                        <div class="project-card__image-wrapper">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="assets/projects/maison-lumiere-mobile.jpg" type="image/jpeg">
+                                <img src="assets/projects/maison-lumiere-desktop.jpg" alt="Maison de Lumière — cultural center with light-filled galleries, auditorium, and sculpture garden" class="project-card__image" loading="lazy" width="800" height="1000">
+                            </picture>
+                            <div class="project-card__overlay">
+                                <div class="project-card__meta">
+                                    <span class="project-card__category">Cultural Center</span>
+                                    <span class="project-card__location">Lyon, France</span>
+                                </div>
+                                <h3 class="project-card__title">Maison de Lumière</h3>
+                                <p class="project-card__description">A cultural center designed as an instrument for light — galleries, auditorium, and gardens choreographed around illumination.</p>
+                                <a href="/projects/maison-lumiere.html" class="project-card__link">View Project <span aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 9: The Glass Pavilion -->
+                    <article class="project-card" role="listitem" data-category="cultural" data-scroll-reveal data-scroll-reveal-delay="900">
+                        <div class="project-card__image-wrapper">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="assets/projects/glass-pavilion-mobile.jpg" type="image/jpeg">
+                                <img src="assets/projects/glass-pavilion-desktop.jpg" alt="The Glass Pavilion — transparent art pavilion in a sculpture park, minimal steel and glass" class="project-card__image" loading="lazy" width="800" height="1000">
+                            </picture>
+                            <div class="project-card__overlay">
+                                <div class="project-card__meta">
+                                    <span class="project-card__category">Art Pavilion</span>
+                                    <span class="project-card__location">Aspen, Colorado</span>
+                                </div>
+                                <h3 class="project-card__title">The Glass Pavilion</h3>
+                                <p class="project-card__description">A transparent pavilion for rotating art installations, disappearing into the landscape of a high-altitude sculpture park.</p>
+                                <a href="/projects/glass-pavilion.html" class="project-card__link">View Project <span aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load More -->
+                <div class="projects-load-more" data-scroll-reveal data-scroll-reveal-delay="1000">
+                    <button class="btn btn--secondary btn--large" id="loadMoreBtn">Load More Projects</button>
+                    <p class="projects-disclaimer">* All projects shown are conceptual portfolio pieces — not completed client commissions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section cta-final" id="cta" aria-labelledby="cta-title" data-scroll-reveal>
+            <div class="container">
+                <div class="cta-final__content" data-scroll-reveal data-scroll-reveal-delay="100">
+                    <p class="section__eyebrow">Begin a Conversation</p>
+                    <h2 class="section__title" id="cta-title">Have a project in mind?</h2>
+                    <p class="cta-final__description">We select a limited number of projects each year to ensure dedicated attention. Let's discuss your vision.</p>
+                    <div class="cta-final__actions" data-scroll-reveal-delay="200">
+                        <a href="/contact.html" class="btn btn--primary btn--large">Start a Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo" aria-label="LUMORA Home">
+                        <svg class="footer__logo-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                            <path d="M24 6L10 18v20l14 10 14-10V18L24 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M24 14v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <span class="footer__logo-text">LUMORA</span>
+                    </a>
+                    <p class="footer__tagline">Spaces that make you feel something.</p>
+
+                    <div class="footer__social" role="list" aria-label="Social links">
+                        <a href="https://instagram.com/lumora" class="footer__social-link" aria-label="Instagram" role="listitem" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/company/lumora" class="footer__social-link" aria-label="LinkedIn" role="listitem" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="https://pinterest.com/lumora" class="footer__social-link" aria-label="Pinterest" role="listitem" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <line x1="12" y1="17" x2="12" y2="22"/>
+                                <path d="M5 17h14v-2.5a5 5 0 0 0-5-5A5 5 0 0 0 5 14.5V17z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="footer__nav" aria-label="Footer navigation">
+                    <div class="footer__nav-col">
+                        <h4 class="footer__nav-title">Projects</h4>
+                        <ul role="list">
+                            <li><a href="/projects.html" class="footer__nav-link">All Projects</a></li>
+                            <li><a href="/projects.html?category=residential" class="footer__nav-link">Residential</a></li>
+                            <li><a href="/projects.html?category=hospitality" class="footer__nav-link">Hospitality</a></li>
+                            <li><a href="/projects.html?category=cultural" class="footer__nav-link">Cultural</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__nav-col">
+                        <h4 class="footer__nav-title">Services</h4>
+                        <ul role="list">
+                            <li><a href="/services.html#architecture" class="footer__nav-link">Architecture</a></li>
+                            <li><a href="/services.html#interior-design" class="footer__nav-link">Interior Design</a></li>
+                            <li><a href="/services.html#residential" class="footer__nav-link">Residential Design</a></li>
+                            <li><a href="/services.html#hospitality" class="footer__nav-link">Hospitality Design</a></li>
+                            <li><a href="/services.html#renovation" class="footer__nav-link">Renovation & Restoration</a></li>
+                            <li><a href="/services.html#consultation" class="footer__nav-link">Spatial Consultation</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__nav-col">
+                        <h4 class="footer__nav-title">Studio</h4>
+                        <ul role="list">
+                            <li><a href="/about.html" class="footer__nav-link">Our Philosophy</a></li>
+                            <li><a href="/about.html#approach" class="footer__nav-link">Design Process</a></li>
+                            <li><a href="/about.html#values" class="footer__nav-link">Values</a></li>
+                            <li><a href="/about.html#team" class="footer__nav-link">Team</a></li>
+                            <li><a href="/journal.html" class="footer__nav-link">Journal</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__nav-col">
+                        <h4 class="footer__nav-title">Contact</h4>
+                        <ul role="list">
+                            <li><a href="/contact.html" class="footer__nav-link">Get in Touch</a></li>
+                            <li><a href="mailto:studio@lumora.example.com" class="footer__nav-link">studio@lumora.example.com</a></li>
+                            <li><a href="tel:+331XXXXXX" class="footer__nav-link">+33 1 XX XX XX XX</a></li>
+                            <li><address class="footer__nav-link">125 Rue Saint-Honoré, 75001 Paris</address></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2024 LUMORA. All rights reserved.</p>
+                <nav class="footer__legal" aria-label="Legal links">
+                    <a href="/privacy.html" class="footer__legal-link">Privacy Policy</a>
+                    <a href="/terms.html" class="footer__legal-link">Terms of Service</a>
+                    <a href="/cookies.html" class="footer__legal-link">Cookie Policy</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cookie-consent" id="cookieConsent" role="dialog" aria-labelledby="cookieTitle" aria-describedby="cookieDesc" hidden>
+        <div class="cookie-consent__content">
+            <h3 id="cookieTitle" class="cookie-consent__title">Cookie Preferences</h3>
+            <p id="cookieDesc" class="cookie-consent__desc">We use cookies to enhance your experience. Essential cookies are required for the site to function. Analytics help us improve.</p>
+            <div class="cookie-consent__actions">
+                <button class="btn btn--secondary cookie-consent__btn" id="cookieReject">Reject Optional</button>
+                <button class="btn btn--primary cookie-consent__btn" id="cookieAccept">Accept All</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container" id="toastContainer" aria-live="polite" aria-label="Notifications"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

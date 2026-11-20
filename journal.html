@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LUMORA Journal — Original editorial articles on architecture, design, materials, and the relationship between built environments and human experience.">
+    <meta name="theme-color" content="#F5F2EC">
+    <title>Journal | LUMORA</title>
+
+    <link rel="canonical" href="https://lumora.example.com/journal.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Journal | LUMORA">
+    <meta property="og:description" content="Original editorial articles on architecture, design, materials, and the relationship between built environments and human experience.">
+    <meta property="og:image" content="assets/journal-hero-desktop.jpg">
+    <meta property="og:url" content="https://lumora.example.com/journal.html">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Journal | LUMORA">
+    <meta name="twitter:description" content="Original editorial articles on architecture, design, materials, and the relationship between built environments and human experience.">
+    <meta name="twitter:image" content="assets/journal-hero-desktop.jpg">
+
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "LUMORA Journal",
+        "description": "Original editorial articles on architecture, design, materials, and the relationship between built environments and human experience.",
+        "url": "https://lumora.example.com/journal.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "LUMORA"
+        },
+        "blogPosts": [
+            {
+                "@type": "BlogPosting",
+                "headline": "The Beauty of Natural Materials",
+                "url": "https://lumora.example.com/journal/beauty-of-natural-materials.html"
+            },
+            {
+                "@type": "BlogPosting",
+                "headline": "Designing with Light and Shadow",
+                "url": "https://lumora.example.com/journal/designing-with-light-and-shadow.html"
+            },
+            {
+                "@type": "BlogPosting",
+                "headline": "The Relationship Between Architecture and Nature",
+                "url": "https://lumora.example.com/journal/architecture-and-nature.html"
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header" id="header" role="banner">
+        <nav class="nav container" aria-label="Main navigation">
+            <a href="/" class="nav__logo" aria-label="LUMORA Home">
+                <svg class="nav__logo-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                    <path d="M24 6L10 18v20l14 10 14-10V18L24 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M24 14v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <span class="nav__logo-text">LUMORA</span>
+            </a>
+
+            <div class="nav__links" id="navLinks" role="navigation">
+                <a href="/about.html" class="nav__link">About</a>
+                <a href="/projects.html" class="nav__link">Projects</a>
+                <a href="/services.html" class="nav__link">Services</a>
+                <a href="/journal.html" class="nav__link" aria-current="page">Journal</a>
+                <a href="/contact.html" class="nav__link">Contact</a>
+            </div>
+
+            <div class="nav__actions">
+                <button class="nav__menu-toggle" id="navMenuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+                    <span class="nav__menu-bar" aria-hidden="true"></span>
+                    <span class="nav__menu-bar" aria-hidden="true"></span>
+                    <span class="nav__menu-bar" aria-hidden="true"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <!-- Page Hero -->
+        <section class="page-hero" aria-labelledby="page-hero-title">
+            <div class="page-hero__background" aria-hidden="true">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="assets/journal-hero-mobile.jpg" type="image/jpeg">
+                    <img src="assets/journal-hero-desktop.jpg" alt="Editorial workspace with architectural books, sketches, and material samples" class="page-hero__image" loading="eager" fetchpriority="high" width="1920" height="800">
+                </picture>
+                <div class="page-hero__overlay" aria-hidden="true"></div>
+            </div>
+            <div class="container">
+                <header class="page-hero__content" data-scroll-reveal>
+                    <p class="page-hero__eyebrow" data-scroll-reveal-delay="100">LUMORA Journal</p>
+                    <h1 class="page-hero__title" id="page-hero-title" data-scroll-reveal-delay="200">Thoughts on space, material, and light</h1>
+                    <p class="page-hero__description" data-scroll-reveal-delay="300">Original editorial articles exploring the ideas that inform our work — from the poetry of materials to the choreography of light.</p>
+                </header>
+            </div>
+        </section>
+
+        <!-- Article 1: The Beauty of Natural Materials -->
+        <article class="section article-feature" id="article-materials" aria-labelledby="article-materials-title" data-scroll-reveal>
+            <div class="container">
+                <div class="article-feature__grid">
+                    <div class="article-feature__visual" data-scroll-reveal data-scroll-reveal-delay="100">
+                        <div class="article-feature__image-wrapper">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="assets/journal/materials-mobile.jpg" type="image/jpeg">
+                                <img src="assets/journal/materials-desktop.jpg" alt="Natural stone samples — limestone, travertine, marble — showing texture, veining, and color variation" class="article-feature__image" loading="lazy" width="800" height="1000">
+                            </picture>
+                            <div class="article-feature__accent-line" aria-hidden="true"></div>
+                        </div>
+                    </div>
+
+                    <div class="article-feature__content" data-scroll-reveal data-scroll-reveal-delay="200">
+                        <div class="article-feature__meta">
+                            <time class="article-feature__date" datetime="2024-03-15">March 15, 2024</time>
+                            <span class="article-feature__category">Materials</span>
+                            <span class="article-feature__author">By Yuki Tanaka</span>
+                        </div>
+                        <h2 class="article-feature__title" id="article-materials-title">The Beauty of Natural Materials</h2>
+                        <p class="article-feature__excerpt">Why stone, wood, and clay continue to outperform their synthetic counterparts — not just aesthetically, but experientially.</p>
+                        <div class="article-feature__body">
+                            <p class="lead">There is a moment in every project when the material palette is presented to the client. The stone samples are laid out — honed limestone, brushed travertine, cleft slate. The wood boards are leaned against the wall — white oak, walnut, cedar. And inevitably, someone reaches out to touch.</p>
+                            <p>This tactile impulse is not sentimentality. It is recognition. Natural materials carry information that synthetic ones cannot: the geological history in a vein of calcite, the seasonal growth rings in a timber board, the fire that transformed clay into ceramic. When we run our fingers across honed stone, we are reading a story millions of years in the making.</p>
+                            <p>But the beauty of natural materials extends beyond the visual and tactile. It is performative. Limestone breathes, regulating humidity. Cedar ages to silver, protecting itself. Clay plaster absorbs and releases moisture, stabilizing indoor climate. These are not passive surfaces — they are active participants in the building's ecology.</p>
+                            <p>Synthetic materials promise consistency. Natural materials deliver character. A limestone floor will never look the same in two projects — each quarry block carries its own fossil record, its own tonal dance. This variability is not a defect; it is the signature of authenticity.</p>
+                            <p>In our work, we specify materials not for their novelty but for their honesty. We want the patina of use, the grace of aging, the deepening of beauty over time. A building that improves with age is a building that respects its occupants and its environment.</p>
+                        </div>
+                        <a href="journal/beauty-of-natural-materials.html" class="btn btn--tertiary">Read Full Article <span aria-hidden="true">→</span></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 2: Designing with Light and Shadow -->
+        <article class="section article-feature article-feature--reverse" id="article-light" aria-labelledby="article-light-title" data-scroll-reveal>
+            <div class="container">
+                <div class="article-feature__grid">
+                    <div class="article-feature__visual" data-scroll-reveal data-scroll-reveal-delay="100">
+                        <div class="article-feature__image-wrapper">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="assets/journal/light-mobile.jpg" type="image/jpeg">
+                                <img src="assets/journal/light-desktop.jpg" alt="Architectural light study — sun paths, shadow patterns, daylight analysis diagrams" class="article-feature__image" loading="lazy" width="800" height="1000">
+                            </picture>
+                            <div class="article-feature__accent-line" aria-hidden="true"></div>
+                        </div>
+                    </div>
+
+                    <div class="article-feature__content" data-scroll-reveal data-scroll-reveal-delay="200">
+                        <div class="article-feature__meta">
+                            <time class="article-feature__date" datetime="2024-02-28">February 28, 2024</time>
+                            <span class="article-feature__category">Light</span>
+                            <span class="article-feature__author">By Isabelle Moreau</span>
+                        </div>
+                        <h2 class="article-feature__title" id="article-light-title">Designing with Light and Shadow</h2>
+                        <p class="article-feature__excerpt">Light is not merely illumination — it is a construction material. How we shape, filter, and choreograph it defines the emotional quality of space.</p>
+                        <div class="article-feature__body">
+                            <p class="lead">Louis Kahn famously said, "The sun never knew how great it was until it hit the side of a building." We would add: the building never knew its own form until the sun revealed it. Light does not just illuminate architecture — it completes it.</p>
+                            <p>In our practice, light is treated as a primary design material, alongside stone, wood, and concrete. We model it, simulate it, and choreograph it with the same rigor we apply to structure. But unlike structure, light is temporal. It moves. It changes color. It appears and disappears. Designing for light means designing for time.</p>
+                            <p>The most powerful architectural moments often occur in shadow. A deep window reveal catches morning light, casting a sharp geometric shadow across a stone floor. A perforated screen filters harsh midday sun into a constellation of dancing points. A clerestory brings north light into a gallery, rendering color with perfect fidelity. These are not accidents — they are composed.</p>
+                            <p>We design for three light conditions: direct (sunlight), diffuse (skylight), and reflected (bounced light). Each has a different quality, a different emotional register. Direct light creates drama and hierarchy. Diffuse light creates calm and equity. Reflected light creates subtlety and depth. The art is in the balance.</p>
+                            <p>At night, the choreography continues. We design artificial lighting not as a simulation of daylight but as its own composition — layers of accent, ambient, and task light that reveal the architecture's second personality. The building that is serene by day becomes poetic by night.</p>
+                        </div>
+                        <a href="journal/designing-with-light-and-shadow.html" class="btn btn--tertiary">Read Full Article <span aria-hidden="true">→</span></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 3: The Relationship Between Architecture and Nature -->
+        <article class="section article-feature" id="article-nature" aria-labelledby="article-nature-title" data-scroll-reveal>
+            <div class="container">
+                <div class="article-feature__grid">
+                    <div class="article-feature__visual" data-scroll-reveal data-scroll-reveal-delay="100">
+                        <div class="article-feature__image-wrapper">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="assets/journal/nature-mobile.jpg" type="image/jpeg">
+                                <img src="assets/journal/nature-desktop.jpg" alt="Architecture integrated with landscape — green roofs, courtyard gardens, blurred boundaries" class="article-feature__image" loading="lazy" width="800" height="1000">
+                            </picture>
+                            <div class="article-feature__accent-line" aria-hidden="true"></div>
+                        </div>
+                    </div>
+
+                    <div class="article-feature__content" data-scroll-reveal data-scroll-reveal-delay="200">
+                        <div class="article-feature__meta">
+                            <time class="article-feature__date" datetime="2024-01-20">January 20, 2024</time>
+                            <span class="article-feature__category">Nature</span>
+                            <span class="article-feature__author">By Thomas Andersson</span>
+                        </div>
+                        <h2 class="article-feature__title" id="article-nature-title">The Relationship Between Architecture and Nature</h2>
+                        <p class="article-feature__excerpt">The boundary between built and grown is not a line — it is a zone. Exploring the fertile threshold where architecture and landscape become indistinguishable.</p>
+                        <div class="article-feature__body">
+                            <p class="lead">The history of architecture can be read as a negotiation with nature. Sometimes adversarial — the wall that keeps weather out. Sometimes collaborative — the courtyard that brings sky in. Sometimes surrender — the ruin that the forest reclaims. The most compelling work lives in the collaborative zone.</p>
+                            <p>We are interested in the threshold — the place where architecture stops being purely built and starts being grown. This is not about adding plants to buildings (though we do that). It is about designing the interface: the soil depth for a roof garden, the drainage for a courtyard tree, the structural capacity for a living wall, the microclimate for an indoor garden.</p>
+                            <p>Biophilic design has become a buzzword, but its principles are timeless. Prospect and refuge. Complexity and order. Sensory variability. Thermal and airflow variability. Dynamic and diffuse light. Connection with natural systems. These are not trends — they are evolutionary imperatives. We feel better in spaces that echo the environments we evolved in.</p>
+                            <p>In our projects, nature is not decoration. It is infrastructure. The olive trees in the courtyard provide shade, fruit, and habitat. The green roof insulates, manages stormwater, and creates habitat. The indoor garden filters air, regulates humidity, and connects occupants to seasonal change. Every green element earns its place through performance.</p>
+                            <p>The ultimate goal is reciprocity. The architecture gives the landscape structure, irrigation, and protection. The landscape gives the architecture cooling, beauty, and meaning. Neither is complete without the other.</p>
+                        </div>
+                        <a href="journal/architecture-and-nature.html" class="btn btn--tertiary">Read Full Article <span aria-hidden="true">→</span></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Additional Articles Preview -->
+        <section class="section journal-more" aria-labelledby="journal-more-title" data-scroll-reveal>
+            <div class="container">
+                <header class="section__header">
+                    <p class="section__eyebrow">More Reading</p>
+                    <h2 class="section__title" id="journal-more-title">From the archive</h2>
+                </header>
+
+                <div class="journal-more__grid" role="list">
+                    <article class="journal-card" role="listitem" data-scroll-reveal data-scroll-reveal-delay="100">
+                        <a href="journal/materiality-of-memory.html" class="journal-card__link">
+                            <div class="journal-card__image-wrapper">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="assets/journal/memory-thumb-mobile.jpg" type="image/jpeg">
+                                    <img src="assets/journal/memory-thumb-desktop.jpg" alt="Materiality of Memory — weathered surfaces, patina, time" class="journal-card__image" loading="lazy" width="400" height="300">
+                                </picture>
+                            </div>
+                            <div class="journal-card__content">
+                                <time class="journal-card__date" datetime="2023-11-10">November 10, 2023</time>
+                                <span class="journal-card__category">Materials</span>
+                                <h3 class="journal-card__title">The Materiality of Memory</h3>
+                                <p class="journal-card__excerpt">How surfaces record the passage of time — and why we should design for it.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="journal-card" role="listitem" data-scroll-reveal data-scroll-reveal-delay="200">
+                        <a href="journal/acoustics-of-silence.html" class="journal-card__link">
+                            <div class="journal-card__image-wrapper">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="assets/journal/silence-thumb-mobile.jpg" type="image/jpeg">
+                                    <img src="assets/journal/silence-thumb-desktop.jpg" alt="Acoustics of Silence — sound absorption, quiet spaces" class="journal-card__image" loading="lazy" width="400" height="300">
+                                </picture>
+                            </div>
+                            <div class="journal-card__content">
+                                <time class="journal-card__date" datetime="2023-09-05">September 5, 2023</time>
+                                <span class="journal-card__category">Acoustics</span>
+                                <h3 class="journal-card__title">The Acoustics of Silence</h3>
+                                <p class="journal-card__excerpt">Designing for quiet in a noisy world — strategies for acoustic sanctuary.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="journal-card" role="listitem" data-scroll-reveal data-scroll-reveal-delay="300">
+                        <a href="journal/proportion-and-harmony.html" class="journal-card__link">
+                            <div class="journal-card__image-wrapper">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="assets/journal/proportion-thumb-mobile.jpg" type="image/jpeg">
+                                    <img src="assets/journal/proportion-thumb-desktop.jpg" alt="Proportion and Harmony — golden ratio, modular systems, classical principles" class="journal-card__image" loading="lazy" width="400" height="300">
+                                </picture>
+                            </div>
+                            <div class="journal-card__content">
+                                <time class="journal-card__date" datetime="2023-07-12">July 12, 2023</time>
+                                <span class="journal-card__category">Theory</span>
+                                <h3 class="journal-card__title">Proportion and Harmony</h3>
+                                <p class="journal-card__excerpt">Revisiting classical principles for contemporary architecture.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="journal-card" role="listitem" data-scroll-reveal data-scroll-reveal-delay="400">
+                        <a href="journal/craft-in-digital-age.html" class="journal-card__link">
+                            <div class="journal-card__image-wrapper">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="assets/journal/craft-thumb-mobile.jpg" type="image/jpeg">
+                                    <img src="assets/journal/craft-thumb-desktop.jpg" alt="Craft in the Digital Age — parametric design, robotic fabrication, hand finishing" class="journal-card__image" loading="lazy" width="400" height="300">
+                                </picture>
+                            </div>
+                            <div class="journal-card__content">
+                                <time class="journal-card__date" datetime="2023-05-20">May 20, 2023</time>
+                                <span class="journal-card__category">Technology</span>
+                                <h3 class="journal-card__title">Craft in the Digital Age</h3>
+                                <p class="journal-card__excerpt">How parametric tools and robotic fabrication are expanding, not replacing, hand craft.</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+
+                <div class="section__cta" data-scroll-reveal data-scroll-reveal-delay="500">
+                    <a href="/journal.html" class="btn btn--secondary btn--large">View All Articles</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter CTA -->
+        <section class="section newsletter-cta" data-scroll-reveal>
+            <div class="container">
+                <div class="newsletter-cta__content" data-scroll-reveal data-scroll-reveal-delay="100">
+                    <p class="section__eyebrow">Stay Connected</p>
+                    <h2 class="section__title">Receive the Journal</h2>
+                    <p class="newsletter-cta__description">Quarterly essays on architecture, design, and the spaces we inhabit. No spam. Unsubscribe anytime.</p>
+                    <form class="newsletter-cta__form" id="newsletterForm" action="#newsletter" method="POST" data-scroll-reveal data-scroll-reveal-delay="200">
+                        <div class="newsletter-cta__input-group">
+                            <label for="newsletterEmail" class="visually-hidden">Email address</label>
+                            <input type="email" id="newsletterEmail" name="email" class="form__input" placeholder="Enter your email" required autocomplete="email" aria-describedby="newsletterError">
+                            <p class="form__error" id="newsletterError" aria-live="polite"></p>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--large">Subscribe</button>
+                    </form>
+                    <p class="form__privacy">By subscribing, you agree to our <a href="/privacy.html">Privacy Policy</a>.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo" aria-label="LUMORA Home">
+                        <svg class="footer__logo-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                            <path d="M24 6L10 18v20l14 10 14-10V18L24 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M24 14v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <span class="footer__logo-text">LUMORA</span>
+                    </a>
+                    <p class="footer__tagline">Spaces that make you feel something.</p>
+
+                    <div class="footer__social" role="list" aria-label="Social links">
+                        <a href="https://instagram.com/lumora" class="footer__social-link" aria-label="Instagram" role="listitem" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/company/lumora" class="footer__social-link" aria-label="LinkedIn" role="listitem" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="https://pinterest.com/lumora" class="footer__social-link" aria-label="Pinterest" role="listitem" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <line x1="12" y1="17" x2="12" y2="22"/>
+                                <path d="M5 17h14v-2.5a5 5 0 0 0-5-5A5 5 0 0 0 5 14.5V17z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="footer__nav" aria-label="Footer navigation">
+                    <div class="footer__nav-col">
+                        <h4 class="footer__nav-title">Projects</h4>
+                        <ul role="list">
+                            <li><a href="/projects.html" class="footer__nav-link">All Projects</a></li>
+                            <li><a href="/projects.html?category=residential" class="footer__nav-link">Residential</a></li>
+                            <li><a href="/projects.html?category=hospitality" class="footer__nav-link">Hospitality</a></li>
+                            <li><a href="/projects.html?category=cultural" class="footer__nav-link">Cultural</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__nav-col">
+                        <h4 class="footer__nav-title">Services</h4>
+                        <ul role="list">
+                            <li><a href="/services.html#architecture" class="footer__nav-link">Architecture</a></li>
+                            <li><a href="/services.html#interior-design" class="footer__nav-link">Interior Design</a></li>
+                            <li><a href="/services.html#residential" class="footer__nav-link">Residential Design</a></li>
+                            <li><a href="/services.html#hospitality" class="footer__nav-link">Hospitality Design</a></li>
+                            <li><a href="/services.html#renovation" class="footer__nav-link">Renovation & Restoration</a></li>
+                            <li><a href="/services.html#consultation" class="footer__nav-link">Spatial Consultation</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__nav-col">
+                        <h4 class="footer__nav-title">Studio</h4>
+                        <ul role="list">
+                            <li><a href="/about.html" class="footer__nav-link">Our Philosophy</a></li>
+                            <li><a href="/about.html#approach" class="footer__nav-link">Design Process</a></li>
+                            <li><a href="/about.html#values" class="footer__nav-link">Values</a></li>
+                            <li><a href="/about.html#team" class="footer__nav-link">Team</a></li>
+                            <li><a href="/journal.html" class="footer__nav-link">Journal</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__nav-col">
+                        <h4 class="footer__nav-title">Contact</h4>
+                        <ul role="list">
+                            <li><a href="/contact.html" class="footer__nav-link">Get in Touch</a></li>
+                            <li><a href="mailto:studio@lumora.example.com" class="footer__nav-link">studio@lumora.example.com</a></li>
+                            <li><a href="tel:+331XXXXXX" class="footer__nav-link">+33 1 XX XX XX XX</a></li>
+                            <li><address class="footer__nav-link">125 Rue Saint-Honoré, 75001 Paris</address></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2024 LUMORA. All rights reserved.</p>
+                <nav class="footer__legal" aria-label="Legal links">
+                    <a href="/privacy.html" class="footer__legal-link">Privacy Policy</a>
+                    <a href="/terms.html" class="footer__legal-link">Terms of Service</a>
+                    <a href="/cookies.html" class="footer__legal-link">Cookie Policy</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cookie-consent" id="cookieConsent" role="dialog" aria-labelledby="cookieTitle" aria-describedby="cookieDesc" hidden>
+        <div class="cookie-consent__content">
+            <h3 id="cookieTitle" class="cookie-consent__title">Cookie Preferences</h3>
+            <p id="cookieDesc" class="cookie-consent__desc">We use cookies to enhance your experience. Essential cookies are required for the site to function. Analytics help us improve.</p>
+            <div class="cookie-consent__actions">
+                <button class="btn btn--secondary cookie-consent__btn" id="cookieReject">Reject Optional</button>
+                <button class="btn btn--primary cookie-consent__btn" id="cookieAccept">Accept All</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container" id="toastContainer" aria-live="polite" aria-label="Notifications"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

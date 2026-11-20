@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact LUMORA — Start a conversation about your architecture or interior design project. Our studio is based in Paris with ateliers in London and New York.">
+    <meta name="theme-color" content="#F5F2EC">
+    <title>Contact | LUMORA</title>
+
+    <link rel="canonical" href="https://lumora.example.com/contact.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact | LUMORA">
+    <meta property="og:description" content="Start a conversation about your architecture or interior design project.">
+    <meta property="og:image" content="assets/contact-hero-desktop.jpg">
+    <meta property="og:url" content="https://lumora.example.com/contact.html">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact | LUMORA">
+    <meta name="twitter:description" content="Start a conversation about your architecture or interior design project.">
+    <meta name="twitter:image" content="assets/contact-hero-desktop.jpg">
+
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact LUMORA",
+        "description": "Start a conversation about your architecture or interior design project.",
+        "url": "https://lumora.example.com/contact.html",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "LUMORA",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+33-1-XX-XX-XX-XX",
+                "contactType": "customer service",
+                "availableLanguage": ["French", "English"],
+                "areaServed": "International"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "125 Rue Saint-Honoré",
+                "addressLocality": "Paris",
+                "postalCode": "75001",
+                "addressCountry": "FR"
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header" id="header" role="banner">
+        <nav class="nav container" aria-label="Main navigation">
+            <a href="/" class="nav__logo" aria-label="LUMORA Home">
+                <svg class="nav__logo-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                    <path d="M24 6L10 18v20l14 10 14-10V18L24 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M24 14v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <span class="nav__logo-text">LUMORA</span>
+            </a>
+
+            <div class="nav__links" id="navLinks" role="navigation">
+                <a href="/about.html" class="nav__link">About</a>
+                <a href="/projects.html" class="nav__link">Projects</a>
+                <a href="/services.html" class="nav__link">Services</a>
+                <a href="/journal.html" class="nav__link">Journal</a>
+                <a href="/contact.html" class="nav__link" aria-current="page">Contact</a>
+            </div>
+
+            <div class="nav__actions">
+                <button class="nav__menu-toggle" id="navMenuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+                    <span class="nav__menu-bar" aria-hidden="true"></span>
+                    <span class="nav__menu-bar" aria-hidden="true"></span>
+                    <span class="nav__menu-bar" aria-hidden="true"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <!-- Page Hero -->
+        <section class="page-hero" aria-labelledby="page-hero-title">
+            <div class="page-hero__background" aria-hidden="true">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="assets/contact-hero-mobile.jpg" type="image/jpeg">
+                    <img src="assets/contact-hero-desktop.jpg" alt="LUMORA Paris atelier reception — elegant waiting area with material samples" class="page-hero__image" loading="eager" fetchpriority="high" width="1920" height="800">
+                </picture>
+                <div class="page-hero__overlay" aria-hidden="true"></div>
+            </div>
+            <div class="container">
+                <header class="page-hero__content" data-scroll-reveal>
+                    <p class="page-hero__eyebrow" data-scroll-reveal-delay="100">Get in Touch</p>
+                    <h1 class="page-hero__title" id="page-hero-title" data-scroll-reveal-delay="200">Let's begin a conversation</h1>
+                    <p class="page-hero__description" data-scroll-reveal-delay="300">Whether you're envisioning a private residence, a boutique hotel, or a cultural landmark, we'd love to hear about your project. The first conversation is always complimentary.</p>
+                </header>
+            </div>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="section contact-content" id="contact" aria-labelledby="contact-title" data-scroll-reveal>
+            <div class="container">
+                <div class="contact-content__grid">
+                    <div class="contact-content__info" data-scroll-reveal data-scroll-reveal-delay="100">
+                        <h2 class="section__title" id="contact-title">Start your project</h2>
+                        <p class="contact-content__lead">We select a limited number of projects each year to ensure dedicated attention and the highest level of craft. Tell us about your vision, and we'll respond within 48 hours to discuss next steps.</p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method" data-scroll-reveal data-scroll-reveal-delay="200">
+                                <div class="contact-method__icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-method__details">
+                                    <h3 class="contact-method__label">Email</h3>
+                                    <a href="mailto:studio@lumora.example.com" class="contact-method__value">studio@lumora.example.com</a>
+                                    <p class="contact-method__note">For project inquiries & general correspondence</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method" data-scroll-reveal data-scroll-reveal-delay="300">
+                                <div class="contact-method__icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-method__details">
+                                    <h3 class="contact-method__label">Phone</h3>
+                                    <a href="tel:+331XXXXXX" class="contact-method__value">+33 1 XX XX XX XX</a>
+                                    <p class="contact-method__note">Paris studio — Mon-Fri, 9am-6pm CET</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method" data-scroll-reveal data-scroll-reveal-delay="400">
+                                <div class="contact-method__icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-method__details">
+                                    <h3 class="contact-method__label">Visit Our Atelier</h3>
+                                    <address class="contact-method__value">
+                                        125 Rue Saint-Honoré<br>
+                                        75001 Paris, France
+                                    </address>
+                                    <p class="contact-method__note">By appointment only</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method" data-scroll-reveal data-scroll-reveal-delay="500">
+                                <div class="contact-method__icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <line x1="2" y1="12" x2="22" y2="12"/>
+                                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-method__details">
+                                    <h3 class="contact-method__label">International Ateliers</h3>
+                                    <div class="contact-method__value">
+                                        <p>London: 18 Albemarle Street, Mayfair, W1S 4HA</p>
+                                        <p>New York: 450 West 14th Street, NY 10014</p>
+                                    </div>
+                                    <p class="contact-method__note">By appointment only</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm" action="#contact" method="POST" data-scroll-reveal data-scroll-reveal-delay="200" novalidate>
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="firstName" class="form__label">First Name</label>
+                                <input type="text" id="firstName" name="firstName" class="form__input" required autocomplete="given-name" aria-describedby="firstNameError">
+                                <p class="form__error" id="firstNameError" aria-live="polite"></p>
+                            </div>
+                            <div class="form__group">
+                                <label for="lastName" class="form__label">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" class="form__input" required autocomplete="family-name" aria-describedby="lastNameError">
+                                <p class="form__error" id="lastNameError" aria-live="polite"></p>
+                            </div>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form__input" required autocomplete="email" aria-describedby="emailError">
+                            <p class="form__error" id="emailError" aria-live="polite"></p>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="phone" class="form__label">Phone (Optional)</label>
+                            <input type="tel" id="phone" name="phone" class="form__input" autocomplete="tel" aria-describedby="phoneError">
+                            <p class="form__error" id="phoneError" aria-live="polite"></p>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="projectType" class="form__label">Project Type</label>
+                            <select id="projectType" name="projectType" class="form__select" required aria-describedby="projectTypeError">
+                                <option value="">Select project type</option>
+                                <option value="residential-new">New Build Residence</option>
+                                <option value="residential-renovation">Residential Renovation</option>
+                                <option value="hospitality">Hotel / Resort / Restaurant</option>
+                                <option value="cultural">Cultural / Civic Building</option>
+                                <option value="commercial">Commercial / Workplace</option>
+                                <option value="consultation">Strategic Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <p class="form__error" id="projectTypeError" aria-live="polite"></p>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="budget" class="form__label">Estimated Budget Range</label>
+                            <select id="budget" name="budget" class="form__select" required aria-describedby="budgetError">
+                                <option value="">Select budget range</option>
+                                <option value="500k-1m">€500K - €1M</option>
+                                <option value="1m-3m">€1M - €3M</option>
+                                <option value="3m-5m">€3M - €5M</option>
+                                <option value="5m-10m">€5M - €10M</option>
+                                <option value="10m+">€10M+</option>
+                                <option value="undetermined">Not yet determined</option>
+                            </select>
+                            <p class="form__error" id="budgetError" aria-live="polite"></p>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="location" class="form__label">Project Location</label>
+                            <input type="text" id="location" name="location" class="form__input" required autocomplete="address-line1" placeholder="City, Country" aria-describedby="locationError">
+                            <p class="form__error" id="locationError" aria-live="polite"></p>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="timeline" class="form__label">Desired Timeline</label>
+                            <select id="timeline" name="timeline" class="form__select" aria-describedby="timelineError">
+                                <option value="">Select timeline</option>
+                                <option value="immediate">Immediate (0-3 months)</option>
+                                <option value="near">Near term (3-6 months)</option>
+                                <option value="planning">Planning phase (6-12 months)</option>
+                                <option value="future">Future (12+ months)</option>
+                                <option value="exploratory">Exploratory / No fixed timeline</option>
+                            </select>
+                            <p class="form__error" id="timelineError" aria-live="polite"></p>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="message" class="form__label">Project Vision</label>
+                            <textarea id="message" name="message" class="form__textarea" rows="6" placeholder="Tell us about your project — your aspirations, the site, your lifestyle, any specific requirements..." required aria-describedby="messageError"></textarea>
+                            <p class="form__error" id="messageError" aria-live="polite"></p>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--full form__submit">
+                            <span class="form__submit-text">Submit Inquiry</span>
+                            <span class="form__submit-loader" aria-hidden="true"></span>
+                        </button>
+
+                        <p class="form__privacy">By submitting, you agree to our <a href="/privacy.html">Privacy Policy</a> and consent to being contacted by our studio team. This form does not connect to a live backend — it demonstrates validation and UI states only.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section contact-faq" id="faq" aria-labelledby="faq-title" data-scroll-reveal>
+            <div class="container">
+                <header class="section__header">
+                    <p class="section__eyebrow">Frequently Asked</p>
+                    <h2 class="section__title" id="faq-title">Common questions</h2>
+                </header>
+
+                <div class="faq__grid">
+                    <details class="faq__item" data-scroll-reveal data-scroll-reveal-delay="100">
+                        <summary class="faq__question">How do you select projects?</summary>
+                        <div class="faq__answer">
+                            <p>We take on a limited number of projects each year — typically 8-12 — to ensure each receives the depth of attention it deserves. Selection is based on alignment with our design philosophy, project complexity, client engagement, and schedule compatibility. We're transparent about capacity and will refer trusted colleagues when we're at capacity.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item" data-scroll-reveal data-scroll-reveal-delay="200">
+                        <summary class="faq__question">What is your fee structure?</summary>
+                        <div class="faq__answer">
+                            <p>Fees are project-specific and typically structured as a percentage of construction cost (8-15% depending on scope) or a fixed fee for defined phases. We provide a detailed fee proposal after the initial discovery phase. We do not work on speculative or unpaid competition basis.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item" data-scroll-reveal data-scroll-reveal-delay="300">
+                        <summary class="faq__question">Do you work internationally?</summary>
+                        <div class="faq__answer">
+                            <p>Yes. Our ateliers in Paris, London, and New York support projects globally. We have delivered work across Europe, the Americas, the Middle East, and Asia. For projects outside our office locations, we establish local partnerships for regulatory compliance and site presence.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item" data-scroll-reveal data-scroll-reveal-delay="400">
+                        <summary class="faq__question">What is the typical project timeline?</summary>
+                        <div class="faq__answer">
+                            <p>Residential projects: 18-36 months from concept to completion. Hospitality: 24-48 months. Cultural: 36-60+ months. Consultation engagements: 4-12 weeks. Timelines vary significantly based on scale, complexity, jurisdiction, and client decision-making pace.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item" data-scroll-reveal data-scroll-reveal-delay="500">
+                        <summary class="faq__question">Can we visit your studio?</summary>
+                        <div class="faq__answer">
+                            <p>Absolutely. We welcome clients to our Paris atelier by appointment. It's the best way to experience our material library, see current models, and meet the team. Virtual studio tours are also available for international clients.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item" data-scroll-reveal data-scroll-reveal-delay="600">
+                        <summary class="faq__question">Do you offer interior design only?</summary>
+                        <div class="faq__answer">
+                            <p>Yes. We accept interior-only commissions for existing structures where the architectural shell is fixed. These projects follow the same rigorous process — concept through FF&E procurement and installation.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo" aria-label="LUMORA Home">
+                        <svg class="footer__logo-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                            <path d="M24 6L10 18v20l14 10 14-10V18L24 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M24 14v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <span class="footer__logo-text">LUMORA</span>
+                    </a>
+                    <p class="footer__tagline">Spaces that make you feel something.</p>
+
+                    <div class="footer__social" role="list" aria-label="Social links">
+                        <a href="https://instagram.com/lumora" class="footer__social-link" aria-label="Instagram" role="listitem" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/company/lumora" class="footer__social-link" aria-label="LinkedIn" role="listitem" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="https://pinterest.com/lumora" class="footer__social-link" aria-label="Pinterest" role="listitem" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <line x1="12" y1="17" x2="12" y2="22"/>
+                                <path d="M5 17h14v-2.5a5 5 0 0 0-5-5A5 5 0 0 0 5 14.5V17z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="footer__nav" aria-label="Footer navigation">
+                    <div class="footer__nav-col">
+                        <h4 class="footer__nav-title">Projects</h4>
+                        <ul role="list">
+                            <li><a href="/projects.html" class="footer__nav-link">All Projects</a></li>
+                            <li><a href="/projects.html?category=residential" class="footer__nav-link">Residential</a></li>
+                            <li><a href="/projects.html?category=hospitality" class="footer__nav-link">Hospitality</a></li>
+                            <li><a href="/projects.html?category=cultural" class="footer__nav-link">Cultural</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__nav-col">
+                        <h4 class="footer__nav-title">Services</h4>
+                        <ul role="list">
+                            <li><a href="/services.html#architecture" class="footer__nav-link">Architecture</a></li>
+                            <li><a href="/services.html#interior-design" class="footer__nav-link">Interior Design</a></li>
+                            <li><a href="/services.html#residential" class="footer__nav-link">Residential Design</a></li>
+                            <li><a href="/services.html#hospitality" class="footer__nav-link">Hospitality Design</a></li>
+                            <li><a href="/services.html#renovation" class="footer__nav-link">Renovation & Restoration</a></li>
+                            <li><a href="/services.html#consultation" class="footer__nav-link">Spatial Consultation</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__nav-col">
+                        <h4 class="footer__nav-title">Studio</h4>
+                        <ul role="list">
+                            <li><a href="/about.html" class="footer__nav-link">Our Philosophy</a></li>
+                            <li><a href="/about.html#approach" class="footer__nav-link">Design Process</a></li>
+                            <li><a href="/about.html#values" class="footer__nav-link">Values</a></li>
+                            <li><a href="/about.html#team" class="footer__nav-link">Team</a></li>
+                            <li><a href="/journal.html" class="footer__nav-link">Journal</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__nav-col">
+                        <h4 class="footer__nav-title">Contact</h4>
+                        <ul role="list">
+                            <li><a href="/contact.html" class="footer__nav-link">Get in Touch</a></li>
+                            <li><a href="mailto:studio@lumora.example.com" class="footer__nav-link">studio@lumora.example.com</a></li>
+                            <li><a href="tel:+331XXXXXX" class="footer__nav-link">+33 1 XX XX XX XX</a></li>
+                            <li><address class="footer__nav-link">125 Rue Saint-Honoré, 75001 Paris</address></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2024 LUMORA. All rights reserved.</p>
+                <nav class="footer__legal" aria-label="Legal links">
+                    <a href="/privacy.html" class="footer__legal-link">Privacy Policy</a>
+                    <a href="/terms.html" class="footer__legal-link">Terms of Service</a>
+                    <a href="/cookies.html" class="footer__legal-link">Cookie Policy</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cookie-consent" id="cookieConsent" role="dialog" aria-labelledby="cookieTitle" aria-describedby="cookieDesc" hidden>
+        <div class="cookie-consent__content">
+            <h3 id="cookieTitle" class="cookie-consent__title">Cookie Preferences</h3>
+            <p id="cookieDesc" class="cookie-consent__desc">We use cookies to enhance your experience. Essential cookies are required for the site to function. Analytics help us improve.</p>
+            <div class="cookie-consent__actions">
+                <button class="btn btn--secondary cookie-consent__btn" id="cookieReject">Reject Optional</button>
+                <button class="btn btn--primary cookie-consent__btn" id="cookieAccept">Accept All</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container" id="toastContainer" aria-live="polite" aria-label="Notifications"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

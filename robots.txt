@@ -1,15 +1,10 @@
-# NOVA Premium Website - Robots.txt
+# LUMORA robots.txt
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://nova.example.com/sitemap.xml
+Sitemap: https://lumora.example.com/sitemap.xml
 
-# Disallow private/admin areas
-Disallow: /admin/
-Disallow: /api/
-Disallow: /private/
-Disallow: /*.json$
-
-# Crawl-delay for polite crawling
-Crawl-delay: 10
+# Disallow private/admin areas (none in static site)
+# Disallow: /assets/
+# Disallow: /design-system/
